@@ -39,7 +39,7 @@ class SignUp extends React.Component {
                 <label>Password{"\n"}
                     <input
                         type="password"
-                        value={this.state.username}
+                        value={this.state.password}
                         onChange={this.handleChange}
                     />
                 </label>
@@ -47,7 +47,7 @@ class SignUp extends React.Component {
                 <label>Confirm Password{"\n"}
                     <input
                         type="password"
-                        value={this.state.username}
+                        value={this.state.confirmPassword}
                         onChange={this.handleChange}
                     />
                 </label>
