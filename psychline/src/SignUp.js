@@ -5,7 +5,7 @@ class SignUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
@@ -20,7 +20,7 @@ class SignUp extends React.Component {
         return (
             <form >
                 <h2>Account Details</h2>
-                <label>{"Email Address\n"}
+                <label>Email Address{'\n'}
                     <input
                         type="email"
                         value={this.state.email}
@@ -28,7 +28,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>{"Username\n"}
+                <label>Username{'\n'}
                     <input
                         type="text"
                         value={this.state.username}
@@ -36,7 +36,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>{"Password\n"}
+                <label>Password{'\n'}
                     <input
                         type="password"
                         value={this.state.password}
@@ -44,7 +44,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>{"Confirm Password\n"}
+                <label>Confirm Password{'\n'}
                     <input
                         type="password"
                         value={this.state.confirmPassword}
