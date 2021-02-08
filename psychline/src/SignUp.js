@@ -1,11 +1,11 @@
-import react from "react"
-import reactDOM from "react-dom"
+import React from "react"
+import ReactDOM from "react-dom"
 
 class SignUp extends React.Component {
     constructor(props) {
         super(props);
         this.state = {
-            
+
         };
 
         this.handleInputChange = this.handleInputChange.bind(this);
