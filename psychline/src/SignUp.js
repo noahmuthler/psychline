@@ -2,14 +2,14 @@ import react from "react"
 import reactDOM from "react-dom"
 
 class SignUp extends React.Component {
-    constructor(props){
+    constructor(props) {
         super(props);
-        this.state={};
+        this.state = {};
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
 
-    handleInputChange(event){
+    handleInputChange(event) {
 
 
     }
@@ -22,12 +22,12 @@ class SignUp extends React.Component {
                     <input
                         name="email"
                         type="email"
-                        value= {this.state.value}
+                        value={this.state.value}
                         onChange={this.handleChange}
 
 
-                    
-                    
+
+
                     />
                 </label>
             </form>
