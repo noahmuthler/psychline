@@ -1,11 +1,16 @@
+import React, { Component } from 'react';
 import './App.css';
 
-function App() {
-    return ( 
-        <div className="App">
-            <img src="assets/bannerPic.jpg"></img>
-        </div>
+import LoginButton from './LoginButton'
+
+class App extends Component {
+  render() {
+    return (
+      <div className="App">
+          <LoginButton />
+      </div>
     );
+  }
 }
 
 export default App;
