@@ -54,7 +54,14 @@ class SignUp extends React.Component {
 
 
                 <h2>Profile Details</h2>
-                <label>
+                <label>Name: {'/n'}
+                    <input
+                        type="text"
+                        value={this.state.name}
+                        onChange={this.handleChange}
+
+                    />
+
 
                 </label>
             </form>
