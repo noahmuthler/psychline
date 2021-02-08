@@ -12,8 +12,13 @@
     "web-vitals": "^1.1.0"
   },
   "scripts": {
+<<<<<<< HEAD
     "start": "webpack-dev-server --open --config webpack/webpack.config.dev.js",
     "build": "webpack --config wepack/webpack.config.prod.js --colors",
+=======
+    "start": "index.js start",
+    "build": "react-scripts build",
+>>>>>>> 91e4ca2713a7330b377fa8a083143c9ef0c7a386
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
