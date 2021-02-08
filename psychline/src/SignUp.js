@@ -20,7 +20,7 @@ class SignUp extends React.Component {
         return (
             <form >
                 <h2>Account Details</h2>
-                <label>Email Address{'\n'}
+                <label>Email Address<br/>
                     <input
                         type="email"
                         value={this.state.email}
@@ -28,7 +28,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>Username{'\n'}
+                <label>Username<br/>
                     <input
                         type="text"
                         value={this.state.username}
@@ -36,7 +36,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>Password{'\n'}
+                <label>Password<br/>
                     <input
                         type="password"
                         value={this.state.password}
@@ -44,7 +44,7 @@ class SignUp extends React.Component {
                     />
                 </label>
 
-                <label>Confirm Password{'\n'}
+                <label>Confirm Password<br/>
                     <input
                         type="password"
                         value={this.state.confirmPassword}
@@ -54,7 +54,7 @@ class SignUp extends React.Component {
 
 
                 <h2>Profile Details</h2>
-                <label>Name: {'/n'}
+                <label>Name:<br/>
                     <input
                         type="text"
                         value={this.state.name}
