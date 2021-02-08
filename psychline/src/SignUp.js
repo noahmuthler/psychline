@@ -20,48 +20,47 @@ class SignUp extends React.Component {
         return (
             <form >
                 <h2>Account Details</h2>
-                <label>Email Address<br/>
+                <label>Email Address<br />
                     <input
                         type="email"
                         value={this.state.email}
                         onChange={this.handleChange}
-                    />
+                    /><br />
                 </label>
 
-                <label>Username<br/>
+                <label>Username<br />
                     <input
                         type="text"
                         value={this.state.username}
                         onChange={this.handleChange}
-                    />
+                    /><br />
                 </label>
 
-                <label>Password<br/>
+                <label>Password<br />
                     <input
                         type="password"
                         value={this.state.password}
                         onChange={this.handleChange}
-                    />
+                    /><br />
                 </label>
 
-                <label>Confirm Password<br/>
+                <label>Confirm Password<br />
                     <input
                         type="password"
                         value={this.state.confirmPassword}
                         onChange={this.handleChange}
-                    />
+                    /><br />
                 </label>
 
 
                 <h2>Profile Details</h2>
-                <label>Name:<br/>
+                <label>Name:<br />
                     <input
                         type="text"
                         value={this.state.name}
                         onChange={this.handleChange}
 
-                    />
-
+                    /><br />
 
                 </label>
             </form>
