@@ -1,17 +1,31 @@
 body {
-    margin-left: 15%;
-    margin-right: 15%;
+    background-color: #484d5c;
+    font-family: 'Cardo', serif;
+    padding-left: 15%;
+    padding-right: 10%;
     font-family: 'Source Sans Pro', sans-serif;
     /*background-color: #7AC358;*/
-    /*color: white;*/
+    color: #c0ccd4;
 }
 
-.heading {
+h1,
+h2 {
+    font-family: 'Oswald', sans-serif;
+    text-transform: uppercase;
+    color: #ffce00;
+}
+
+p {
+    font-family: 'Oswald', sans-serif;
+}
+
+
+/*.heading {
     margin: 0 -9999%;
     padding: 0.25rem 9999%;
     background-color: #7AC358;
     color: white;
-}
+}*/
 
 .grid-container-account {
     display: grid;
