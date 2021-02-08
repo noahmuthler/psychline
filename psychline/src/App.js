@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import './App.css';
 
-import LoginButton from './LoginButtonButton'
+import LoginButton from './LoginButton'
 
 class App extends Component {
   render() {
