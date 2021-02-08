@@ -4,7 +4,9 @@ import reactDOM from "react-dom"
 class SignUp extends React.Component {
     constructor(props) {
         super(props);
-        this.state = {};
+        this.state = {
+            
+        };
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
