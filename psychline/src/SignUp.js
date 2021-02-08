@@ -1,5 +1,5 @@
-import react from "react"
-import reactDOM from "react-dom"
+import React from "react"
+import ReactDOM from "react-dom"
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -59,3 +59,5 @@ class SignUp extends React.Component {
         );
     }
 }
+
+export default SignUp;
