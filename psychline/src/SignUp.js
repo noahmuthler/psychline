@@ -20,15 +20,40 @@ class SignUp extends React.Component {
                 <h2>Account Details</h2>
                 <label>Email Address{"\n"}
                     <input
-                        name="email"
                         type="email"
-                        value={this.state.value}
+                        value={this.state.email}
                         onChange={this.handleChange}
-
-
-
-
                     />
+                </label>
+
+                <label>Username{"\n"}
+                    <input
+                        type="text"
+                        value={this.state.username}
+                        onChange={this.handleChange}
+                    />
+                </label>
+
+                <label>Password{"\n"}
+                    <input
+                        type="password"
+                        value={this.state.username}
+                        onChange={this.handleChange}
+                    />
+                </label>
+
+                <label>Confirm Password{"\n"}
+                    <input
+                        type="password"
+                        value={this.state.username}
+                        onChange={this.handleChange}
+                    />
+                </label>
+
+
+                <h2>Profile Details</h2>
+                <label>
+
                 </label>
             </form>
         );
