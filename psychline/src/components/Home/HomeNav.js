@@ -15,6 +15,9 @@ function HomeNav() {
                         </ul>
                     </nav>
                 </div>
+                <div className="header-t">
+                    <h1>your first step</h1>
+                </div>
             </div>
         </div>
     );
