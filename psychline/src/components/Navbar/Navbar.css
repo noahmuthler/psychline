@@ -1,5 +1,5 @@
 .NavbarItems {
-    background-color: lightblue;
+    background: lightblue;
     height: 80px;
     display: flex;
     justify-content: center;
@@ -38,16 +38,16 @@
     padding: 0.5rem 1rem;
 }
 
-.nav-links:hover { 
-    background-color:#6d76f7;
+.nav-links:hover {
+    background-color: #6d76f7;
     border-radius: 4px;
     transition: all 0.2s ease out;
 }
 
-.fa-bars{
-    color:#fff; 
+.fa-bars {
+    color: #fff;
 }
 
-.nav-links-mobile{
-    display:none
+.nav-links-mobile {
+    display: none
 }
