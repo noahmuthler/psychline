@@ -24,12 +24,12 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button variant="outlined" color="primary" onClick={handleClickOpen}>
+      <Button color="primary" onClick={handleClickOpen} className="log-but" id="log">
         login
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
         <DialogTitle id="form-dialog-title">
-            Login
+            login
             <CloseIcon onClick={handleClose} className="closeButton" />
         </DialogTitle>
         <DialogContent>

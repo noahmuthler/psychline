@@ -1,6 +1,7 @@
 import React from "react";
 import Header from "./Header";
 import "./HomeNav.css";
+import LoginButton from "./LoginButton";
 
 function HomeNav() {
     return(
@@ -10,7 +11,7 @@ function HomeNav() {
                     <nav>
                         <ul className="home-nav">
                             <li><a href="/">PsychLine</a></li>
-                            <li><a href="/login">login</a></li>
+                            <li><a><LoginButton /></a></li>
                             <li><a href="/signup">sign up</a></li>
                         </ul>
                     </nav>
