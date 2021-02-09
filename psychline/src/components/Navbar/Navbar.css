@@ -22,7 +22,7 @@
 }
 
 .menu-icon{
-    justify-content:right;
+    justify-self:right;
 }
 
 .nav-menu {
