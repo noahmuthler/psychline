@@ -1,7 +1,5 @@
 import React from "react"
 import ReactDOM from "react-dom"
-import './SignUp.css';
-<link href="https://fonts.googleapis.com/css?family=Cardo:400,700|Oswald" rel="stylesheet"></link>
 
 class SignUp extends React.Component {
     constructor(props) {
@@ -24,7 +22,7 @@ class SignUp extends React.Component {
             <body>
                 <div class="heading">
                     <h1>Create Account</h1>
-                    <p>Registering is really simple, just imput the required fields and your good to go! *Required</p>
+                    <p>ReRegistering is really simple, just imput the required fields and your good to go! *Required</p>
                 </div>
                 <form >
                     <div class="grid-container-account">
