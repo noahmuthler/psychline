@@ -1,5 +1,4 @@
 import React from "react"
-import ReactDOM from "react-dom"
 import './SignUp.css';
 import Navbar from "./components/Navbar/Navbar"
 
@@ -16,7 +15,7 @@ class SignUp extends React.Component {
 
     render() {
         return (
-            <body >
+            <body>
                 <Navbar />
                 <div class="heading" >
                     <h1> Create Account </h1>
