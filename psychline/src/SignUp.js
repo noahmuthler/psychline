@@ -1,6 +1,7 @@
 import React from "react"
 import ReactDOM from "react-dom"
 import './SignUp.css';
+import Navbar from "./components/Navbar/Navbar"
 
 class SignUp extends React.Component {
 
@@ -16,6 +17,7 @@ class SignUp extends React.Component {
     render() {
         return (
             <body >
+                <Navbar />
                 <div class="heading" >
                     <h1> Create Account </h1>
                     <p> Registering is really simple, just imput the required fields and your good to go! * Required </p>
