@@ -33,10 +33,7 @@ export default function FormDialog() {
             <CloseIcon onClick={handleClose} className="closeButton" />
         </DialogTitle>
         <DialogContent>
-          <DialogContentText>
-            To subscribe to this website, please enter your email address here. We will send updates
-            occasionally.
-          </DialogContentText>
+          <img src="" />
           <TextField
             autoFocus
             margin="dense"
