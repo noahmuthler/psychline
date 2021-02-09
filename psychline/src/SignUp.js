@@ -19,8 +19,8 @@ class SignUp extends React.Component {
             <body >
                 <Navbar />
                 <div class="heading" >
-                    <h1> Create Account </h1>
-                    <p> Registering is really simple, just imput the required fields and your good to go! * Required </p>
+                    <h1 class="heading_item"> Create Account </h1>
+                    <p class="heading_item"> Registering is really simple, just imput the required fields and your good to go! * Required </p>
                 </div >
                 <form >
                     <div class="grid-container-account" >
