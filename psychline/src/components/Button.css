@@ -13,8 +13,8 @@
 .btn:hover {
     padding: 8px 20px;
     transition: all 0.3s ease out;
-    background: #fff;
-    color: #6568F4;
+    background: #1687A7;
+    color: white;
     transition: 250ms;
 }
 
@@ -35,7 +35,7 @@
     padding:8px 20px;
     border-radius: 4px;
     font-size:18px;
-    color:#fff;
+    color:#1687A7;
 
 
 }
