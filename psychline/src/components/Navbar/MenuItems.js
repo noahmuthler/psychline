@@ -1,7 +1,7 @@
 export const MenuItems = [
     {
         title: 'Home',
-        url:/* Url Later Down The Road */ '#',
+        url:/* Url Later Down The Road */ '/',
         cName: 'nav-links-home'
     },
     {
@@ -11,7 +11,7 @@ export const MenuItems = [
     },
     {
         title: 'Register',
-        url:/* Url Later Down The Road */ '#',
+        url:/* Url Later Down The Road */ '/signup',
         cName: 'nav-links-register'
     },
     {

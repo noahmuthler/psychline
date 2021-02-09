@@ -1,0 +1,19 @@
+body {
+    background-color: #F6F5F5;
+    margin: 0;
+}
+
+.home-nav > li > a {
+    color: white;
+    text-decoration: none;
+    z-index: 1;
+}
+
+.container {
+    background-image: url("bannerPic.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    height: 100px;
+    width: 100%;
+}
