@@ -1,0 +1,21 @@
+.NavbarItems {
+    background: white;
+    height:80px;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    font: size 1.2rem;
+}
+.navbar-logo{
+    color:#fff;
+    justify-self: start;
+    margin-left: 20px ;
+    cursor: pointer;
+
+}
+
+.fa-react{
+    margin-left: .5 rem;
+    font-size: 1.6 rem;
+    
+}
