@@ -1,0 +1,24 @@
+.link {
+    display: block;
+    margin-left: 0;
+    margin-right: auto;
+}
+
+.closeButton {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    color: black;
+}
+
+div > .log-but {
+    color: white;
+    font-size: 24px;
+    font-family: haboro-contrast-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+}
+
+div > .log-but:hover {
+    background: none;
+}
