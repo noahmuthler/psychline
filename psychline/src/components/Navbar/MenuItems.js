@@ -1,27 +1,27 @@
-export const MenuItems=[
+export const MenuItems = [
     {
-        title:'Home',
+        title: 'Home',
         url:/* Url Later Down The Road */ '#',
-        cName:'nav-links-home'
+        cName: 'nav-links-home'
     },
     {
-        title:'Login',
+        title: 'Login',
         url:/* Url Later Down The Road */ '#',
-        cName:'nav-links-login'
+        cName: 'nav-links-login'
     },
     {
-        title:'Register',
+        title: 'Register',
         url:/* Url Later Down The Road */ '#',
-        cName:'nav-links-register'
+        cName: 'nav-links-register'
     },
     {
-        title:'Account',
+        title: 'Account',
         url:/* Url Later Down The Road */ '#',
-        cName:'nav-links-account'
+        cName: 'nav-links-account'
     },
     {
-        title:'About Us',
+        title: 'About Us',
         url:/* Url Later Down The Road */ '#',
-        cName:'nav-links-us'
+        cName: 'nav-links-us'
     },
 ]
