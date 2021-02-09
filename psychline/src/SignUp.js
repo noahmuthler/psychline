@@ -99,7 +99,6 @@ class SignUp extends React.Component {
                             </label>
 
                             <label > Terms of Service < br />
-
                                 <input
                                     type="checkbox"
                                     checked={this.state.tos}
