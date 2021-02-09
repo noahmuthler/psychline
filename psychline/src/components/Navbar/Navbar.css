@@ -2,7 +2,7 @@
     background: lightblue;
     height: 80px;
     display: flex;
-    justify-content: center;
+    justify-content: flex;
     align-items: center;
     font: size 1.2rem;
     margin: 0 -9999%;
@@ -21,6 +21,10 @@
     font-size: 1.6 rem;
 }
 
+.menu-icon{
+    justify-content:right;
+}
+
 .nav-menu {
     display: grid;
     grid-template-columns: repeat(5, auto);
@@ -28,6 +32,7 @@
     list-style: none;
     text-align: center;
     width: 70w;
+    justify-self:right;
     justify-content: end;
     margin-right: 2rem;
 }
@@ -39,7 +44,7 @@
 }
 
 .nav-links:hover {
-    background-color: #6d76f7;
+    background-color: pink;
     border-radius: 4px;
     transition: all 0.2s ease out;
 }
