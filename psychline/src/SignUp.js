@@ -3,6 +3,7 @@ import './SignUp.css';
 import Navbar from "./components/Navbar/Navbar"
 import { MenuItems } from "./components/Navbar/MenuItems";
 import { Button } from "./components/Button"
+import LoginButton from './components/Home/LoginButton'
 
 class SignUp extends React.Component {
 
@@ -418,8 +419,10 @@ class SignUp extends React.Component {
                                 onChange={this.handleChange} /><label>Post Traumatic Stress Disorder</label>
                         </div>
                     </div><div class="sign_up_button">
-                        <Button buttonStyle="btn--signup">Sign Up</Button>
+                        <div class="buttons">
+                            <Button buttonStyle="btn--signup">Sign Up</Button>
                         </div>
+                    </div>
                 </form >
             </body>
         );
