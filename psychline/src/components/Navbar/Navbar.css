@@ -5,8 +5,7 @@
     justify-content: flex;
     align-items: center;
     font: size 1.2rem;
-    margin: 0 -9999%;
-    padding: 0.25rem 9999%;
+    overflow: none;
 }
 
 .navbar-logo {
