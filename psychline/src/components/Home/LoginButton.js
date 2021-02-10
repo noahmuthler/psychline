@@ -8,6 +8,7 @@ import DialogContent from '@material-ui/core/DialogContent';
 import DialogContentText from '@material-ui/core/DialogContentText';
 import DialogTitle from '@material-ui/core/DialogTitle';
 import CloseIcon from '@material-ui/icons/Close';
+import brainPic from './brain.jpg';
 
 import "./LoginButton.css";
 
@@ -28,12 +29,12 @@ export default function FormDialog() {
         login
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
-        <DialogTitle id="form-dialog-title">
-            login
+        <DialogTitle>
+            <span style={{color: 'black'}}>login</span>
             <CloseIcon onClick={handleClose} className="closeButton" />
         </DialogTitle>
         <DialogContent>
-          <img src="" />
+          <img src={brainPic} className="logo"/>
           <TextField
             autoFocus
             margin="dense"
