@@ -1,17 +1,19 @@
+import LoginButton from "../Home/LoginButton";
+
 export const MenuItems = [
     {
         title: 'Home',
-        url:/* Url Later Down The Road */ '/',
+        url:'/',
         cName: 'nav-links-home'
     },
     {
         title: 'About Us',
-        url:/* Url Later Down The Road */ '#',
+        url:'/about',
         cName: 'nav-links-us'
     },
     {
         title: 'Login',
-        url:/* Url Later Down The Road */ '#',
+        url: null,
         cName: 'nav-links-login'
     },
     {
