@@ -54,7 +54,7 @@ export default function FormDialog() {
         </DialogContent>
         <DialogActions>
             <div className="link">
-                <Link href="" >
+                <Link href="http://localhost:3000/signup" >
                     make an account
                 </Link>
                  ~ 
