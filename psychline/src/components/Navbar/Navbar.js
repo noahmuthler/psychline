@@ -11,7 +11,6 @@ class Navbar extends Component {
         this.setState({ clicked: !this.state.clicked })
     }
 
-
     render() {
         return (
             <nav className="NavbarItems">
