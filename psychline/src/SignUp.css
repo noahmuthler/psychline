@@ -3,29 +3,28 @@ body {
     font-family: 'Cardo', serif;
     font-family: 'Source Sans Pro', sans-serif;
     /*background-color: #7AC358;*/
-    color: #c0ccd4;
+    color: #f4f6f4;
 }
 
 h1,
 h2 {
     font-family: 'Oswald', sans-serif;
     text-transform: uppercase;
-    color: #ffce00;
+    color: #be6961;
 }
 
 p {
     font-family: 'Oswald', sans-serif;
 }
 
-
 .heading {
     margin: 0 -9999%;
     padding: 0.25rem 9999%;
-    background-color: #7AC358;
+    background-color: #6FA9AE;
     color: white;
 }
-.heading_item{
-    
+
+.heading_item {
     padding-left: 15%;
     padding-right: 10%;
 }
@@ -33,22 +32,62 @@ p {
 .grid-container-account {
     display: grid;
     grid-template-columns: auto auto;
-    grid-gap: 10px;
-    padding: 10px;
+    padding-top: 3%;
     padding-left: 15%;
-    padding-right: 10%;
+    padding-right: 15%;
 }
 
 .left-item {
+    border-width: 1px;
     grid-column-start: 1;
+    color: #57605D;
+    border: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-bottom: 3%;
 }
 
 .right-item {
+    color: #57605D;
     grid-column-start: 2;
+    border: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    padding-bottom: 3%;
 }
 
-.grid-container-interest {}
+.bottom-item {
+    color: #57605D;
+    border: solid;
+    border-left-width: 0px;
+    border-right-width: 0px;
+    border-top-width: 0px;
+    padding-bottom: 3%;
+    grid-column: 1/span 2;
+}
 
-#interest {
-    width: 80%;
+.input_item {
+    padding: 1.5%;
+}
+
+.input_field {
+    width: 55%;
+}
+
+input {
+    padding: 1.5%;
+}
+
+select{
+    padding:1.5%;
+}
+
+input:hover {
+    background-color: #e7eeee;
+    transition: all 0.3s ease-out;
+}
+
+.sign_up_button {
+    padding: 3%;
+    text-align: center;
 }
