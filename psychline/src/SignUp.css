@@ -4,6 +4,7 @@ body {
     font-family: 'Source Sans Pro', sans-serif;
     /*background-color: #7AC358;*/
     color: #f4f6f4;
+    overflow: none;
 }
 
 h1,
@@ -18,8 +19,8 @@ p {
 }
 
 .heading {
-    margin: 0 -9999%;
-    padding: 0.25rem 9999%;
+    padding-top: .25%;
+    padding-bottom: .50%;
     background-color: #6FA9AE;
     color: white;
 }
@@ -32,7 +33,7 @@ p {
 .grid-container-account {
     display: grid;
     grid-template-columns: auto auto;
-    padding-top: 3%;
+    padding-top: 2%;
     padding-left: 15%;
     padding-right: 15%;
 }
@@ -78,8 +79,8 @@ input {
     padding: 1.5%;
 }
 
-select{
-    padding:1.5%;
+select {
+    padding: 1.5%;
 }
 
 input:hover {
