@@ -17,6 +17,7 @@ function HomeNav() {
                     <h1>your first step</h1>
                 </div>
             </div>
+            <a href="/about">about us</a>
         </div>
     );
 }
