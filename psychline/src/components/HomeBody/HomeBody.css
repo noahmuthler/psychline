@@ -1,0 +1,128 @@
+.body-give-title {
+    color: black;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.body-give-text {
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+}
+
+.give-img {
+    margin-left: 42.5%;
+    height: 300px;
+    width: 300px;
+    margin-top: 0.5%;
+}
+
+.works-t {
+    color:black;
+    font-size: 50px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    margin-top: 5%;
+}
+
+.rule {
+    width: 50%;
+    margin-bottom: 1.5%;
+}
+
+.works-components {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.works-components-t {
+    text-align: center;
+    font-size: 36px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.works-components-p {
+    width: 50%;
+    text-align: center;
+    margin-left: 25%;
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.works-img {
+    height: 100px;
+    width: 100px;
+    margin-left: 43%;
+}
+
+.mission {
+    color: black;
+    font-size: 50px;
+    margin-top: 4%;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.mission-p {
+    font-size: 24px;
+    font-family: 'Open Sans', sans-serif;
+    margin-left: 20%;
+    margin-right: 20%;
+    text-align: center;
+    margin-top: 4%;
+}
+
+.mission-btn-container {
+    margin-left: 46%;
+    margin-right: 20%;
+    margin-top: 2.5%;
+    margin-bottom: 2.5%;
+}
+
+.mission-btn {
+    font-size: 24px;
+    padding: 12px 28px;
+    border-radius: 8px;
+    background-color: #F6F5F5;
+    border: 2px solid black;
+    font-family: 'Open Sans', sans-serif;
+    cursor: pointer;
+    overflow: hidden;
+    transition-duration: 0.4s;
+}
+
+.testimonials {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+    margin-top: 10%;
+    margin-bottom: 10%;
+}
+
+.testimonial-cards {
+    background-color: #1687A7;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 300px;
+    height: auto;
+    width: 12%;
+    border: 1px solid black;
+    box-shadow: 2px 5px 10px 5px #888888;
+}
+
+.card-avatar {
+    margin-top: 10%;
+    height: 75px;
+    width: 75px;
+    border-radius: 50%;
+}
+
+.card-p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    width: 75%;
+}

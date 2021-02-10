@@ -37,6 +37,9 @@ body {
     color: white;
     margin-left: 2%;
     font-size: 36px;
+    font-family: haboro-contrast-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
 }
 
 #sign {
@@ -65,4 +68,11 @@ body {
     text-align: center;
     font-size: 96px;
     margin-top: auto;
+    font-family: haboro-contrast-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
 }
