@@ -27,6 +27,7 @@ div > .log-but:hover {
     font-family: haboro-contrast-normal, sans-serif;
     font-weight: 500;
     font-style: normal;
+    border-color: white;
 }
 
 .logo {

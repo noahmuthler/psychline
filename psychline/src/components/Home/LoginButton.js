@@ -25,7 +25,7 @@ export default function FormDialog() {
 
   return (
     <div>
-      <Button color="primary" onClick={handleClickOpen} className="log-but" id="log">
+      <Button variant="outlined" onClick={handleClickOpen} id="log">
         login
       </Button>
       <Dialog open={open} onClose={handleClose} aria-labelledby="form-dialog-title">
