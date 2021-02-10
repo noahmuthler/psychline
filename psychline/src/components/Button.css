@@ -1,5 +1,6 @@
 :root {
     --primary: #3acdf7;
+    --signup: #f4f6f4;
 }
 
 .btn {
@@ -23,7 +24,7 @@
 }
 
 .btn--outline {
-    background-color: transparent;
+    background-color: #D3E0EA;
     color: white;
     padding: 8px 20px;
     border-radius: 4px;
@@ -31,10 +32,15 @@
     transition: all 0.3s ease out;
 }
 
+.btn--signip{
+    background-color: var(--signup);
+}
+
 .btn--medium{
     padding:8px 20px;
     border-radius: 4px;
     font-size:18px;
+    background-color: #D3E0EA;
     color:#1687A7;
 
 
@@ -43,5 +49,5 @@
     padding:12px 26px;
     border-radius: 4px;
     font-size:20px;
-    color:#fff;
+    color:#D3E0EA;
 }
