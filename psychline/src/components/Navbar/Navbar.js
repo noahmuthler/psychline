@@ -3,6 +3,7 @@ import { MenuItems } from "./MenuItems"
 import './Navbar.css'
 import { Button } from "../Button"
 
+
 class Navbar extends Component {
     state = { clicked: false }
 
@@ -23,17 +24,15 @@ class Navbar extends Component {
                         return (
                             <li key={index}>
                                 <a className={item.cName} href={item.url}>
-                                    {item.title}
+                                    <Button>{item.title}</Button>
                                 </a>
                             </li>
                         )
                     })}
                 </ul>
-                <Button className="nav-menu">Sign Up</Button>
             </nav>
         )
     }
-
 }
 
 export default Navbar
