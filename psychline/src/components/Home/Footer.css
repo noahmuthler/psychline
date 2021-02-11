@@ -1,0 +1,34 @@
+.footerContainer {
+    color: black;
+    display: flex;
+    background-color: #1687A7;
+    padding-bottom: 20px;
+}
+
+.footerText {
+    display: flex;
+}
+
+.footerFirstCol {
+    padding-left: 20%;
+    padding-right: 35%;
+}
+
+.footerSecondCol {
+    padding-right: 35%;
+}
+
+.footerThirdCol {
+    width: 200px;
+}
+
+.footerImg {
+    width: 100px;
+    height: 100px;
+    padding: 20%;
+}
+
+.footerItem {
+    padding-top: 2%;
+    padding-bottom: 2%;
+}

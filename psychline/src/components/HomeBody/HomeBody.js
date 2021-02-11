@@ -6,6 +6,7 @@ import Fade from "react-reveal/Fade";
 import Avatar from "@material-ui/core/Avatar";
 import BoyAvatar from "./smiling_face_of_a_child.svg";
 import GirlAvatar from "./Caricatura_de_una_chica_soriendo.svg";
+import Footer from "../Home/Footer";
 
 export default function HomeBody() {
     return(
@@ -71,6 +72,7 @@ export default function HomeBody() {
                     </div>
                 </div>
             </Fade>
+            <Footer />
         </div>
     );
 }
