@@ -45,9 +45,9 @@
 }
 
 .works-components-p {
-    width: 50%;
+    width: 75%;
     text-align: center;
-    margin-left: 25%;
+    margin-left: 14%;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
     color: grey;
@@ -78,8 +78,7 @@
 }
 
 .mission-btn-container {
-    margin-left: 46%;
-    margin-right: 20%;
+    margin-left: 45%;
     margin-top: 2.5%;
     margin-bottom: 2.5%;
 }

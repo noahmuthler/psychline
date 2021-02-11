@@ -3,6 +3,7 @@ import HomeBody from "../HomeBody/HomeBody";
 import "./HomeNav.css";
 import LoginButton from "./LoginButton";
 import SignButton from "./SignButton";
+import Fade from "react-reveal/Fade";
 
 function HomeNav() {
     return(
@@ -15,7 +16,9 @@ function HomeNav() {
                         <div class="sign-bt"><SignButton /></div>
                     </div>
                     <div className="header-t">
-                        <h1>your first step</h1>
+                        <Fade bottom>
+                            <h1>your first step</h1>
+                        </Fade>
                     </div>
                 </div>
             </div>
