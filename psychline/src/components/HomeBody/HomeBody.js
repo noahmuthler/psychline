@@ -1,9 +1,11 @@
 import { makeStyles } from "@material-ui/core/styles";
 import React from "react";
 import "./HomeBody.css";
-import GiveGetImage from "./therapy.jpg";
+import GiveGetImage from "./messages.png";
+import PersonalImage from "./personalize (1).png";
+import DiscoverImage from "./discover.png";
+import StartImage from "./start.png";
 import Fade from "react-reveal/Fade";
-import Avatar from "@material-ui/core/Avatar";
 import BoyAvatar from "./smiling_face_of_a_child.svg";
 import GirlAvatar from "./Caricatura_de_una_chica_soriendo.svg";
 import Footer from "../Home/Footer";
@@ -22,17 +24,17 @@ export default function HomeBody() {
                     <div>
                         <h3 className="works-components-t">personalize</h3>
                         <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
-                        <img src={GiveGetImage} className="works-img" />
+                        <img src={PersonalImage} className="works-img" />
                     </div>
                     <div>
                         <h3 className="works-components-t">discover</h3>
                         <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
-                        <img src={GiveGetImage} className="works-img" />
+                        <img src={DiscoverImage} className="works-img" />
                     </div>
                     <div>
                         <h3 className="works-components-t">start</h3>
                         <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
-                        <img src={GiveGetImage} className="works-img" />
+                        <img src={StartImage} className="works-img" />
                     </div>
                 </div>
             </Fade>
