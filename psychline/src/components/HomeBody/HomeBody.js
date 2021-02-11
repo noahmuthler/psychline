@@ -46,6 +46,9 @@ export default function HomeBody() {
                 </p>
                 <div className="mission-btn-container"><a href="/about"><button className="mission-btn">about us</button></a></div>
             </Fade>
+            <h2 className="mission">testimonials</h2>
+            <hr className="rule"></hr>
+            <p className="mission-p">find people to help you on your path to mental clarity.</p>
             <Fade bottom>
                 <div className="testimonials">
                     <div className="testimonial-cards">
