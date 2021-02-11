@@ -1,5 +1,5 @@
 .body-give-title {
-    color: black;
+    color: #1687A7;
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -8,6 +8,7 @@
 .body-give-text {
     font-family: 'Open Sans', sans-serif;
     text-align: center;
+    color: grey;
 }
 
 .give-img {
@@ -18,7 +19,7 @@
 }
 
 .works-t {
-    color:black;
+    color:#1687A7;
     font-size: 50px;
     font-family: 'Open Sans', sans-serif;
     text-align: center;
@@ -40,6 +41,7 @@
     text-align: center;
     font-size: 36px;
     font-family: 'Open Sans', sans-serif;
+    color: black;
 }
 
 .works-components-p {
@@ -48,6 +50,7 @@
     margin-left: 25%;
     font-size: 24px;
     font-family: 'Open Sans', sans-serif;
+    color: grey;
 }
 
 .works-img {
@@ -57,7 +60,7 @@
 }
 
 .mission {
-    color: black;
+    color: #1687A7;
     font-size: 50px;
     margin-top: 4%;
     text-align: center;
@@ -71,6 +74,7 @@
     margin-right: 20%;
     text-align: center;
     margin-top: 4%;
+    color: grey;
 }
 
 .mission-btn-container {

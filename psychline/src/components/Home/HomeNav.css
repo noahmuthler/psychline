@@ -3,16 +3,6 @@ body {
     margin: 0;
 }
 
-.home-nav > li > a {
-    color: white;
-    text-decoration: none;
-    z-index: 1;
-    font-family: haboro-contrast-normal, sans-serif;
-    font-weight: 500;
-    font-style: normal;
-    font-size: 24px;
-}
-
 .nav {
     display: flex;
     justify-content: flex-start;
@@ -22,6 +12,7 @@ body {
 .log-bt {
     margin-left: auto;
     margin-right: 0.5%;
+    color: #F6F5F5;
 }
 
 .sign-bt {
@@ -30,11 +21,11 @@ body {
 
 #brand-link {
     text-decoration: none;
-    color: white;
+    color: #F6F5F5;
 }
 
 #brand {
-    color: white;
+    color: #F6F5F5;
     margin-left: 2%;
     font-size: 36px;
     font-family: haboro-contrast-normal, sans-serif;
@@ -43,9 +34,9 @@ body {
 }
 
 #sign {
-    color: white;
+    color: #F6F5F5;
     text-decoration: none;
-    border-color: white;
+    border-color: #F6F5F5;
 }
 
 #sign-link {
@@ -64,7 +55,7 @@ body {
 }
 
 .header-t > h1 {
-    color: white;
+    color: #F6F5F5;
     text-align: center;
     font-size: 96px;
     margin-top: auto;
