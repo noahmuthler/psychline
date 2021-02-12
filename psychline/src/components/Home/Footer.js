@@ -4,6 +4,7 @@ import logo from "./brain.jpg";
 
 export default function Footer() {
     return (
+        <div>
         <div className="footerContainer">
             <div>
                 <img src={logo} className="footerImg"/>
@@ -17,7 +18,7 @@ export default function Footer() {
                 </div>
                 <div class="footerSecondCol">
                     <h4>company</h4>
-                    <div className="footerItem">about</div>
+                    <div className="footerItem" href="./AboutUs">about</div>
                     <div className="footerItem">social media</div>                   
                 </div>
                 <div class="footerThirdCol">
@@ -29,6 +30,10 @@ export default function Footer() {
                 </div>
             </div>
             
+        </div>
+        <div className="footerBottomText">
+            PsychLine | the first step
+        </div>
         </div>
     )
 }

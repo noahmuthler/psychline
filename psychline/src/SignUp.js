@@ -4,6 +4,7 @@ import Navbar from "./components/Navbar/Navbar"
 import { MenuItems } from "./components/Navbar/MenuItems";
 import { Button } from "./components/Button"
 import LoginButton from './components/Home/LoginButton'
+import Footer from "./components/Home/Footer";
 
 class SignUp extends React.Component {
 
@@ -422,6 +423,7 @@ class SignUp extends React.Component {
                         <div class="buttons">
                             <Button buttonStyle="btn--signup">Sign Up</Button>
                         </div>
+                    <Footer />
                     </div>
                 </form >
             </body>

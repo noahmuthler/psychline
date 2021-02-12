@@ -2,7 +2,7 @@
     color: black;
     display: flex;
     background-color: #1687A7;
-    padding-bottom: 20px;
+    padding-bottom: 70px;
 }
 
 .footerText {
@@ -10,25 +10,39 @@
 }
 
 .footerFirstCol {
-    padding-left: 20%;
-    padding-right: 35%;
+    margin-left: 30%;
+    margin-right: 60%;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .footerSecondCol {
-    padding-right: 35%;
+    margin-right: 60%;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .footerThirdCol {
     width: 200px;
+    display: inline-block;
+    white-space: nowrap;
 }
 
 .footerImg {
     width: 100px;
     height: 100px;
-    padding: 20%;
+    margin-left: 30%;
+    margin-top: 40%;
 }
 
 .footerItem {
-    padding-top: 2%;
-    padding-bottom: 2%;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footerBottomText {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background-color: #1687A7;
 }
