@@ -15,7 +15,7 @@ export default function HomeBody() {
         <div>
             <h2 className="body-give-title">get help, give help</h2>
             <p className="body-give-text">connect with someone who understands</p>
-            <p className="body-give-text">all chats remain confidential</p>
+            <p className="body-give-text">PsychLine is a free platform where you can chat with people who are going through similar problems, but also have similar interests! at PyschLine you are in complete control of confedentiality, who you chat with, and how many people you want to talk to. start your journey today!</p>
             <img src={GiveGetImage} className="give-img"/>
             <h2 className="works-t">how it works</h2>
             <hr className="rule"/>
@@ -23,17 +23,17 @@ export default function HomeBody() {
                 <div className="works-components">
                     <div>
                         <h3 className="works-components-t">personalize</h3>
-                        <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
+                        <p className="works-components-p">when you sign up, you will be able to personalize your profile by selecting what you are interested in and what you are stuggling with. these selections will allow us to be able to connect you to people just like you!</p>
                         <img src={PersonalImage} className="works-img" />
                     </div>
                     <div>
                         <h3 className="works-components-t">discover</h3>
-                        <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
+                        <p className="works-components-p">after signing up, you will have the oppurtunity to meet new and exciting people! at any point you will be able to continuing conversations or branch out and discover!</p>
                         <img src={DiscoverImage} className="works-img" />
                     </div>
                     <div>
                         <h3 className="works-components-t">start</h3>
-                        <p className="works-components-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh.</p>
+                        <p className="works-components-p">start your journey today, for FREE! our mission is to try and help people become the person they want to be, while helping others in the process.</p>
                         <img src={StartImage} className="works-img" />
                     </div>
                 </div>
