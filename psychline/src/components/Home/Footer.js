@@ -12,13 +12,14 @@ export default function Footer() {
             <div className="footerText">
                 <div class="footerFirstCol">
                     <h4>support</h4>
-                    <div className="footerItem">help</div>
+                    <div className="footerItem">immediate help</div>
+                    <div className="footerItem">technical support</div>
                     <div className="footerItem">forget password</div>
                     <div className="footerItem">contact PsychLine</div>
                 </div>
                 <div class="footerSecondCol">
                     <h4>company</h4>
-                    <div className="footerItem" href="./AboutUs">about</div>
+                    <div className="footerItem" onClick="window.location.href = ./AboutUs">about</div>
                     <div className="footerItem">social media</div>                   
                 </div>
                 <div class="footerThirdCol">
