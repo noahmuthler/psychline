@@ -1,3 +1,4 @@
+
 body {
     background-color: white;
     font-family: 'Cardo', serif;
@@ -84,7 +85,7 @@ select {
 }
 
 input:hover {
-    background-color: #e7eeee;
+    background-color: transparent;
     transition: all 0.3s ease-out;
 }
 

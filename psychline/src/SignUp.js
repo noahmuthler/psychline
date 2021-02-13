@@ -5,6 +5,17 @@ import { MenuItems } from "./components/Navbar/MenuItems";
 import { Button } from "./components/Button"
 import LoginButton from './components/Home/LoginButton'
 import Footer from "./components/Home/Footer";
+import { Input, InputLabel, withStyles, FormControl } from '@material-ui/core'
+
+const styles = theme => ({
+    container: {
+        display: 'flex',
+        flexWrap: 'wrap',
+    },
+    formControl: {
+        margin: theme.spacing.unit,
+    },
+});
 
 class SignUp extends React.Component {
 
@@ -18,6 +29,7 @@ class SignUp extends React.Component {
     handleInputChange(event) { }
 
     render() {
+        const { classes } = this.props;
         return (
             <body>
                 <Navbar />
@@ -28,47 +40,50 @@ class SignUp extends React.Component {
                 <form >
                     <div class="grid-container-account" >
                         <div class="left-item" >
-                            <div class="input_item">
-                                <h2 > Account Details </h2>
-                                <label > Email Address < br />
-                                    <input
-                                        class="input_field"
-                                        type="email"
+                            <h2 > Account Details </h2>
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Email Address</InputLabel>
+                                    <Input
+                                        id="email"
                                         value={this.state.email}
                                         onChange={this.handleChange}
-                                    />  <br />
-                                </label>
+                                    />
+                                </FormControl><br />
                             </div>
 
-                            <div class="input_item">
-                                <label > Username < br />
-                                    <input
-                                        class="input_field"
-                                        type="text"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Username</InputLabel>
+                                    <Input
+                                        id="username"
                                         value={this.state.username}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                                    />
+                                </FormControl><br />
+                            </div>
 
-                            <div class="input_item">
-                                <label > Password < br />
-                                    <input
-                                        class="input_field"
-                                        type="password"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Password</InputLabel>
+                                    <Input
+                                        id="password"
                                         value={this.state.password}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                                    />
+                                </FormControl><br />
+                            </div>
 
-                            <div class="input_item">
-                                <label > Confirm Password < br />
-                                    <input
-                                        class="input_field"
-                                        type="password"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Confirm Password</InputLabel>
+                                    <Input
+                                        id="confirmPassword"
                                         value={this.state.confirmPassword}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label> </div >
+                                    />
+                                </FormControl><br />
+                            </div>
                         </div>
 
                         <div class="right-item" >
@@ -423,11 +438,11 @@ class SignUp extends React.Component {
                         <div class="buttons">
                             <Button buttonStyle="btn--signup">Sign Up</Button>
                         </div>
-                    <Footer />
+                        <Footer />
                     </div>
                 </form >
             </body>
         );
     }
 }
-export default SignUp;
+export default withStyles(styles)(SignUp);
