@@ -17,7 +17,7 @@ function AboutUs() {
             <div className="box">
                 <div><img src={noah} /></div>
                 <div className="text"><h3>noah muthler</h3>
-                <p className="text">noah is a college student at Pennsylvania State University and grew up in central pennslyvania. his interests include programming, tinkering with electronics, and NBA basketball. noah has assisted with PsychLine's website user interface and will lead the development of the mobile application. he will also assist with the business side of the company. noah will also he has been impacted personally by mental health, this was a driving force in the creation of PsychLine. noah's goal for the PsychLine is to provide a platform that users can feel comfortable to open up about their personal struggles.</p>
+                <p className="text">noah is a college student at Pennsylvania State University and grew up in central pennslyvania. his interests include programming, tinkering with electronics, and NBA basketball. noah has assisted with PsychLine's website user interface and will lead the development of the mobile application. he will also assist with the business side of the company. noah will also he has been impacted personally by mental health, this was a driving force in the creation of PsychLine. noah's goal for the PsychLine is to provide a platform that users can feel comfortable to open up about their personal struggles. noah is excited to build PsychLine from the ground up through various technologies and business strategies.</p>
                 </div>    
             </div>
             <hr></hr>
