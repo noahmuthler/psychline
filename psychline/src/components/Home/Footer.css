@@ -1,7 +1,7 @@
 .footerContainer {
     color: black;
     display: flex;
-    background-color: #1687A7;
+    background-color: #487E95;
     padding-bottom: 70px;
 }
 
@@ -44,5 +44,5 @@
     color: black;
     text-align: center;
     padding: 20px;
-    background-color: #1687A7;
+    background-color: #487E95;
 }
