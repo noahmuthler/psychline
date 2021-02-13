@@ -5,7 +5,7 @@ import { MenuItems } from "./components/Navbar/MenuItems";
 import { Button } from "./components/Button"
 import LoginButton from './components/Home/LoginButton'
 import Footer from "./components/Home/Footer";
-import { Input, InputLabel, withStyles, FormControl } from '@material-ui/core'
+import { Input, InputLabel, withStyles, FormControl, TextField, Select, MenuItem, FormControlLabel, Checkbox } from '@material-ui/core'
 
 const styles = theme => ({
     container: {
@@ -14,6 +14,10 @@ const styles = theme => ({
     },
     formControl: {
         margin: theme.spacing.unit,
+    },
+    formControlSelect: {
+        margin: theme.spacing(0),
+        minWidth: 120,
     },
 });
 
@@ -88,351 +92,397 @@ class SignUp extends React.Component {
 
                         <div class="right-item" >
                             <h2> Profile Details </h2>
-                            <div class="input_item">
-                                <label> Name < br />
-                                    <input
-                                        class="input_field"
-                                        type="text"
+                            <div className={classes.container}>
+                                <FormControl className={classes.fromControl}>
+                                    <InputLabel>Name</InputLabel>
+                                    <Input
+                                        id="name"
                                         value={this.state.name}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                                    />
+                                </FormControl>< br />
+                            </div><br />
 
-                            <div class="input_item">
-                                <label> Date of Birth < br />
-                                    <input
-                                        class="input_field"
-                                        type="date"
-                                        value={this.state.dob}
-                                        onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                            <TextField
+                                id="dob"
+                                label="Birthday"
+                                type="date"
+                                value={this.state.dob}
+                                className={classes.textField}
+                                InputLabelProps={{
+                                    shrink: true,
+                                }}
+                            /><br /><br />
 
-                            <div class="input_item">
-                                <label > Gender < br />
-                                    <select
-                                        value={this.state.gender}
-                                        onChange={this.handleChange} >
-                                        <option value="male" > Male </option>
-                                        <option value="female" > female </option>
-                                        <option value="other" > Other </option>
-                                    </select > < br />
-                                </label></div>
+                            <FormControl className={classes.formControlSelect}>
+                                <InputLabel>Gender</InputLabel>
+                                <Select
+                                    labelId="gender_label"
+                                    id="gender"
+                                    value={this.state.gender}
+                                    onChange={this.handleChange}
+                                >
+                                    <MenuItem value={"male"}>Male</MenuItem>
+                                    <MenuItem value={"female"}>Female</MenuItem>
+                                    <MenuItem value={"other"}>Other</MenuItem>
+                                </Select>
+                            </FormControl><br /><br />
 
-                            <div class="input_item">
-                                <label > Country < br />
-                                    <select
-                                        value={this.state.country}
-                                        onChange={this.handleChange} >
-                                        <option value="null"></option>
-                                        <option value="Afganistan">Afghanistan</option>
-                                        <option value="Albania">Albania</option>
-                                        <option value="Algeria">Algeria</option>
-                                        <option value="American Samoa">American Samoa</option>
-                                        <option value="Andorra">Andorra</option>
-                                        <option value="Angola">Angola</option>
-                                        <option value="Anguilla">Anguilla</option>
-                                        <option value="Antigua+Barbuda">Antigua and Barbuda</option>
-                                        <option value="Argentina">Argentina</option>
-                                        <option value="Armenia">Armenia</option>
-                                        <option value="Aruba">Aruba</option>
-                                        <option value="Australia">Australia</option>
-                                        <option value="Austria">Austria</option>
-                                        <option value="Azerbaijan">Azerbaijan</option>
-                                        <option value="Bahamas">Bahamas</option>
-                                        <option value="Bahrain">Bahrain</option>
-                                        <option value="Bangladesh">Bangladesh</option>
-                                        <option value="Barbados">Barbados</option>
-                                        <option value="Belarus">Belarus</option>
-                                        <option value="Belgium">Belgium</option>
-                                        <option value="Belize">Belize</option>
-                                        <option value="Benin">Benin</option>
-                                        <option value="Bermuda">Bermuda</option>
-                                        <option value="Bhutan">Bhutan</option>
-                                        <option value="Bolivia">Bolivia</option>
-                                        <option value="Bonaire">Bonaire</option>
-                                        <option value="Bosnia+Herzegovina">Bosnia and Herzegovina</option>
-                                        <option value="Botswana">Botswana</option>
-                                        <option value="Brazil">Brazil</option>
-                                        <option value="British Indian Ocean Ter">British Indian Ocean Ter</option>
-                                        <option value="Brunei">Brunei</option>
-                                        <option value="Bulgaria">Bulgaria</option>
-                                        <option value="Burkina Faso">Burkina Faso</option>
-                                        <option value="Burundi">Burundi</option>
-                                        <option value="Cambodia">Cambodia</option>
-                                        <option value="Cameroon">Cameroon</option>
-                                        <option value="Canada">Canada</option>
-                                        <option value="Canary Islands">Canary Islands</option>
-                                        <option value="Cape Verde">Cape Verde</option>
-                                        <option value="Cayman Islands">Cayman Islands</option>
-                                        <option value="Central African Republic">Central African Republic</option>
-                                        <option value="Chad">Chad</option>
-                                        <option value="Channel Islands">Channel Islands</option>
-                                        <option value="Chile">Chile</option>
-                                        <option value="China">China</option>
-                                        <option value="Christmas Island">Christmas Island</option>
-                                        <option value="Cocos Island">Cocos Island</option>
-                                        <option value="Colombia">Colombia</option>
-                                        <option value="Comoros">Comoros</option>
-                                        <option value="Congo">Congo</option>
-                                        <option value="Cook Islands">Cook Islands</option>
-                                        <option value="Costa Rica">Costa Rica</option>
-                                        <option value="Cote DIvoire">Cote DIvoire</option>
-                                        <option value="Croatia">Croatia</option>
-                                        <option value="Cuba">Cuba</option>
-                                        <option value="Curaco">Curacao</option>
-                                        <option value="Cyprus">Cyprus</option>
-                                        <option value="Czech Republic">Czech Republic</option>
-                                        <option value="Denmark">Denmark</option>
-                                        <option value="Djibouti">Djibouti</option>
-                                        <option value="Dominica">Dominica</option>
-                                        <option value="Dominican Republic">Dominican Republic</option>
-                                        <option value="East Timor">East Timor</option>
-                                        <option value="Ecuador">Ecuador</option>
-                                        <option value="Egypt">Egypt</option>
-                                        <option value="El Salvador">El Salvador</option>
-                                        <option value="Equatorial Guinea">Equatorial Guinea</option>
-                                        <option value="Eritrea">Eritrea</option>
-                                        <option value="Estonia">Estonia</option>
-                                        <option value="Ethiopia">Ethiopia</option>
-                                        <option value="Falkland Islands">Falkland Islands</option>
-                                        <option value="Faroe Islands">Faroe Islands</option>
-                                        <option value="Fiji">Fiji</option>
-                                        <option value="Finland">Finland</option>
-                                        <option value="France">France</option>
-                                        <option value="French Guiana">French Guiana</option>
-                                        <option value="French Polynesia">French Polynesia</option>
-                                        <option value="French Southern Ter">French Southern Ter</option>
-                                        <option value="Gabon">Gabon</option>
-                                        <option value="Gambia">Gambia</option>
-                                        <option value="Georgia">Georgia</option>
-                                        <option value="Germany">Germany</option>
-                                        <option value="Ghana">Ghana</option>
-                                        <option value="Gibraltar">Gibraltar</option>
-                                        <option value="Great Britain">Great Britain</option>
-                                        <option value="Greece">Greece</option>
-                                        <option value="Greenland">Greenland</option>
-                                        <option value="Grenada">Grenada</option>
-                                        <option value="Guadeloupe">Guadeloupe</option>
-                                        <option value="Guam">Guam</option>
-                                        <option value="Guatemala">Guatemala</option>
-                                        <option value="Guinea">Guinea</option>
-                                        <option value="Guyana">Guyana</option>
-                                        <option value="Haiti">Haiti</option>
-                                        <option value="Hawaii">Hawaii</option>
-                                        <option value="Honduras">Honduras</option>
-                                        <option value="Hong Kong">Hong Kong</option>
-                                        <option value="Hungary">Hungary</option>
-                                        <option value="Iceland">Iceland</option>
-                                        <option value="Indonesia">Indonesia</option>
-                                        <option value="India">India</option>
-                                        <option value="Iran">Iran</option>
-                                        <option value="Iraq">Iraq</option>
-                                        <option value="Ireland">Ireland</option>
-                                        <option value="Isle of Man">Isle of Man</option>
-                                        <option value="Israel">Israel</option>
-                                        <option value="Italy">Italy</option>
-                                        <option value="Jamaica">Jamaica</option>
-                                        <option value="Japan">Japan</option>
-                                        <option value="Jordan">Jordan</option>
-                                        <option value="Kazakhstan">Kazakhstan</option>
-                                        <option value="Kenya">Kenya</option>
-                                        <option value="Kiribati">Kiribati</option>
-                                        <option value="Korea North">Korea North</option>
-                                        <option value="Korea Sout">Korea South</option>
-                                        <option value="Kuwait">Kuwait</option>
-                                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                                        <option value="Laos">Laos</option>
-                                        <option value="Latvia">Latvia</option>
-                                        <option value="Lebanon">Lebanon</option>
-                                        <option value="Lesotho">Lesotho</option>
-                                        <option value="Liberia">Liberia</option>
-                                        <option value="Libya">Libya</option>
-                                        <option value="Liechtenstein">Liechtenstein</option>
-                                        <option value="Lithuania">Lithuania</option>
-                                        <option value="Luxembourg">Luxembourg</option>
-                                        <option value="Macau">Macau</option>
-                                        <option value="Macedonia">Macedonia</option>
-                                        <option value="Madagascar">Madagascar</option>
-                                        <option value="Malaysia">Malaysia</option>
-                                        <option value="Malawi">Malawi</option>
-                                        <option value="Maldives">Maldives</option>
-                                        <option value="Mali">Mali</option>
-                                        <option value="Malta">Malta</option>
-                                        <option value="Marshall Islands">Marshall Islands</option>
-                                        <option value="Martinique">Martinique</option>
-                                        <option value="Mauritania">Mauritania</option>
-                                        <option value="Mauritius">Mauritius</option>
-                                        <option value="Mayotte">Mayotte</option>
-                                        <option value="Mexico">Mexico</option>
-                                        <option value="Midway Islands">Midway Islands</option>
-                                        <option value="Moldova">Moldova</option>
-                                        <option value="Monaco">Monaco</option>
-                                        <option value="Mongolia">Mongolia</option>
-                                        <option value="Montserrat">Montserrat</option>
-                                        <option value="Morocco">Morocco</option>
-                                        <option value="Mozambique">Mozambique</option>
-                                        <option value="Myanmar">Myanmar</option>
-                                        <option value="Nambia">Nambia</option>
-                                        <option value="Nauru">Nauru</option>
-                                        <option value="Nepal">Nepal</option>
-                                        <option value="Netherland Antilles">Netherland Antilles</option>
-                                        <option value="Netherlands">Netherlands (Holland, Europe)</option>
-                                        <option value="Nevis">Nevis</option>
-                                        <option value="New Caledonia">New Caledonia</option>
-                                        <option value="New Zealand">New Zealand</option>
-                                        <option value="Nicaragua">Nicaragua</option>
-                                        <option value="Niger">Niger</option>
-                                        <option value="Nigeria">Nigeria</option>
-                                        <option value="Niue">Niue</option>
-                                        <option value="Norfolk Island">Norfolk Island</option>
-                                        <option value="Norway">Norway</option>
-                                        <option value="Oman">Oman</option>
-                                        <option value="Pakistan">Pakistan</option>
-                                        <option value="Palau Island">Palau Island</option>
-                                        <option value="Palestine">Palestine</option>
-                                        <option value="Panama">Panama</option>
-                                        <option value="Papua New Guinea">Papua New Guinea</option>
-                                        <option value="Paraguay">Paraguay</option>
-                                        <option value="Peru">Peru</option>
-                                        <option value="Phillipines">Philippines</option>
-                                        <option value="Pitcairn Island">Pitcairn Island</option>
-                                        <option value="Poland">Poland</option>
-                                        <option value="Portugal">Portugal</option>
-                                        <option value="Puerto Rico">Puerto Rico</option>
-                                        <option value="Qatar">Qatar</option>
-                                        <option value="Republic of Montenegro">Republic of Montenegro</option>
-                                        <option value="Republic of Serbia">Republic of Serbia</option>
-                                        <option value="Reunion">Reunion</option>
-                                        <option value="Romania">Romania</option>
-                                        <option value="Russia">Russia</option>
-                                        <option value="Rwanda">Rwanda</option>
-                                        <option value="St Barthelemy">St Barthelemy</option>
-                                        <option value="St Eustatius">St Eustatius</option>
-                                        <option value="St Helena">St Helena</option>
-                                        <option value="St Kitts-Nevis">St Kitts-Nevis</option>
-                                        <option value="St Lucia">St Lucia</option>
-                                        <option value="St Maarten">St Maarten</option>
-                                        <option value="St Pierre+Miquelon">St Pierre and Miquelon</option>
-                                        <option value="St Vincent+Grenadines">St Vincent and Grenadines</option>
-                                        <option value="Saipan">Saipan</option>
-                                        <option value="Samoa">Samoa</option>
-                                        <option value="Samoa American">Samoa American</option>
-                                        <option value="San Marino">San Marino</option>
-                                        <option value="Sao Tome+Principe">Sao Tome and Principe</option>
-                                        <option value="Saudi Arabia">Saudi Arabia</option>
-                                        <option value="Senegal">Senegal</option>
-                                        <option value="Seychelles">Seychelles</option>
-                                        <option value="Sierra Leone">Sierra Leone</option>
-                                        <option value="Singapore">Singapore</option>
-                                        <option value="Slovakia">Slovakia</option>
-                                        <option value="Slovenia">Slovenia</option>
-                                        <option value="Solomon Islands">Solomon Islands</option>
-                                        <option value="Somalia">Somalia</option>
-                                        <option value="South Africa">South Africa</option>
-                                        <option value="Spain">Spain</option>
-                                        <option value="Sri Lanka">Sri Lanka</option>
-                                        <option value="Sudan">Sudan</option>
-                                        <option value="Suriname">Suriname</option>
-                                        <option value="Swaziland">Swaziland</option>
-                                        <option value="Sweden">Sweden</option>
-                                        <option value="Switzerland">Switzerland</option>
-                                        <option value="Syria">Syria</option>
-                                        <option value="Tahiti">Tahiti</option>
-                                        <option value="Taiwan">Taiwan</option>
-                                        <option value="Tajikistan">Tajikistan</option>
-                                        <option value="Tanzania">Tanzania</option>
-                                        <option value="Thailand">Thailand</option>
-                                        <option value="Togo">Togo</option>
-                                        <option value="Tokelau">Tokelau</option>
-                                        <option value="Tonga">Tonga</option>
-                                        <option value="Trinidad+Tobago">Trinidad and Tobago</option>
-                                        <option value="Tunisia">Tunisia</option>
-                                        <option value="Turkey">Turkey</option>
-                                        <option value="Turkmenistan">Turkmenistan</option>
-                                        <option value="Turks+Caicos Is">Turks and Caicos Is</option>
-                                        <option value="Tuvalu">Tuvalu</option>
-                                        <option value="Uganda">Uganda</option>
-                                        <option value="United Kingdom">United Kingdom</option>
-                                        <option value="Ukraine">Ukraine</option>
-                                        <option value="United Arab Erimates">United Arab Emirates</option>
-                                        <option value="United States of America">United States of America</option>
-                                        <option value="Uraguay">Uruguay</option>
-                                        <option value="Uzbekistan">Uzbekistan</option>
-                                        <option value="Vanuatu">Vanuatu</option>
-                                        <option value="Vatican City State">Vatican City State</option>
-                                        <option value="Venezuela">Venezuela</option>
-                                        <option value="Vietnam">Vietnam</option>
-                                        <option value="Virgin Islands (Brit)">Virgin Islands (Brit)</option>
-                                        <option value="Virgin Islands (USA)">Virgin Islands (USA)</option>
-                                        <option value="Wake Island">Wake Island</option>
-                                        <option value="Wallis+Futana Is">Wallis and Futana Is</option>
-                                        <option value="Yemen">Yemen</option>
-                                        <option value="Zaire">Zaire</option>
-                                        <option value="Zambia">Zambia</option>
-                                        <option value="Zimbabwe">Zimbabwe</option>
-                                    </select> < br />
-                                </label></div>
+                            <FormControl className={classes.formControlSelect}>
+                                <InputLabel>Country</InputLabel>
+                                <Select
+                                    labelId="country_label"
+                                    id="country"
+                                    value={this.state.country}
+                                    onChange={this.handleChange}
+                                >
+                                    <MenuItem value="null"></MenuItem>
+                                    <MenuItem value="Afganistan">Afghanistan</MenuItem>
+                                    <MenuItem value="Albania">Albania</MenuItem>
+                                    <MenuItem value="Algeria">Algeria</MenuItem>
+                                    <MenuItem value="American Samoa">American Samoa</MenuItem>
+                                    <MenuItem value="Andorra">Andorra</MenuItem>
+                                    <MenuItem value="Angola">Angola</MenuItem>
+                                    <MenuItem value="Anguilla">Anguilla</MenuItem>
+                                    <MenuItem value="Antigua+Barbuda">Antigua and Barbuda</MenuItem>
+                                    <MenuItem value="Argentina">Argentina</MenuItem>
+                                    <MenuItem value="Armenia">Armenia</MenuItem>
+                                    <MenuItem value="Aruba">Aruba</MenuItem>
+                                    <MenuItem value="Australia">Australia</MenuItem>
+                                    <MenuItem value="Austria">Austria</MenuItem>
+                                    <MenuItem value="Azerbaijan">Azerbaijan</MenuItem>
+                                    <MenuItem value="Bahamas">Bahamas</MenuItem>
+                                    <MenuItem value="Bahrain">Bahrain</MenuItem>
+                                    <MenuItem value="Bangladesh">Bangladesh</MenuItem>
+                                    <MenuItem value="Barbados">Barbados</MenuItem>
+                                    <MenuItem value="Belarus">Belarus</MenuItem>
+                                    <MenuItem value="Belgium">Belgium</MenuItem>
+                                    <MenuItem value="Belize">Belize</MenuItem>
+                                    <MenuItem value="Benin">Benin</MenuItem>
+                                    <MenuItem value="Bermuda">Bermuda</MenuItem>
+                                    <MenuItem value="Bhutan">Bhutan</MenuItem>
+                                    <MenuItem value="Bolivia">Bolivia</MenuItem>
+                                    <MenuItem value="Bonaire">Bonaire</MenuItem>
+                                    <MenuItem value="Bosnia+Herzegovina">Bosnia and Herzegovina</MenuItem>
+                                    <MenuItem value="Botswana">Botswana</MenuItem>
+                                    <MenuItem value="Brazil">Brazil</MenuItem>
+                                    <MenuItem value="British Indian Ocean Ter">British Indian Ocean Ter</MenuItem>
+                                    <MenuItem value="Brunei">Brunei</MenuItem>
+                                    <MenuItem value="Bulgaria">Bulgaria</MenuItem>
+                                    <MenuItem value="Burkina Faso">Burkina Faso</MenuItem>
+                                    <MenuItem value="Burundi">Burundi</MenuItem>
+                                    <MenuItem value="Cambodia">Cambodia</MenuItem>
+                                    <MenuItem value="Cameroon">Cameroon</MenuItem>
+                                    <MenuItem value="Canada">Canada</MenuItem>
+                                    <MenuItem value="Canary Islands">Canary Islands</MenuItem>
+                                    <MenuItem value="Cape Verde">Cape Verde</MenuItem>
+                                    <MenuItem value="Cayman Islands">Cayman Islands</MenuItem>
+                                    <MenuItem value="Central African Republic">Central African Republic</MenuItem>
+                                    <MenuItem value="Chad">Chad</MenuItem>
+                                    <MenuItem value="Channel Islands">Channel Islands</MenuItem>
+                                    <MenuItem value="Chile">Chile</MenuItem>
+                                    <MenuItem value="China">China</MenuItem>
+                                    <MenuItem value="Christmas Island">Christmas Island</MenuItem>
+                                    <MenuItem value="Cocos Island">Cocos Island</MenuItem>
+                                    <MenuItem value="Colombia">Colombia</MenuItem>
+                                    <MenuItem value="Comoros">Comoros</MenuItem>
+                                    <MenuItem value="Congo">Congo</MenuItem>
+                                    <MenuItem value="Cook Islands">Cook Islands</MenuItem>
+                                    <MenuItem value="Costa Rica">Costa Rica</MenuItem>
+                                    <MenuItem value="Cote DIvoire">Cote DIvoire</MenuItem>
+                                    <MenuItem value="Croatia">Croatia</MenuItem>
+                                    <MenuItem value="Cuba">Cuba</MenuItem>
+                                    <MenuItem value="Curaco">Curacao</MenuItem>
+                                    <MenuItem value="Cyprus">Cyprus</MenuItem>
+                                    <MenuItem value="Czech Republic">Czech Republic</MenuItem>
+                                    <MenuItem value="Denmark">Denmark</MenuItem>
+                                    <MenuItem value="Djibouti">Djibouti</MenuItem>
+                                    <MenuItem value="Dominica">Dominica</MenuItem>
+                                    <MenuItem value="Dominican Republic">Dominican Republic</MenuItem>
+                                    <MenuItem value="East Timor">East Timor</MenuItem>
+                                    <MenuItem value="Ecuador">Ecuador</MenuItem>
+                                    <MenuItem value="Egypt">Egypt</MenuItem>
+                                    <MenuItem value="El Salvador">El Salvador</MenuItem>
+                                    <MenuItem value="Equatorial Guinea">Equatorial Guinea</MenuItem>
+                                    <MenuItem value="Eritrea">Eritrea</MenuItem>
+                                    <MenuItem value="Estonia">Estonia</MenuItem>
+                                    <MenuItem value="Ethiopia">Ethiopia</MenuItem>
+                                    <MenuItem value="Falkland Islands">Falkland Islands</MenuItem>
+                                    <MenuItem value="Faroe Islands">Faroe Islands</MenuItem>
+                                    <MenuItem value="Fiji">Fiji</MenuItem>
+                                    <MenuItem value="Finland">Finland</MenuItem>
+                                    <MenuItem value="France">France</MenuItem>
+                                    <MenuItem value="French Guiana">French Guiana</MenuItem>
+                                    <MenuItem value="French Polynesia">French Polynesia</MenuItem>
+                                    <MenuItem value="French Southern Ter">French Southern Ter</MenuItem>
+                                    <MenuItem value="Gabon">Gabon</MenuItem>
+                                    <MenuItem value="Gambia">Gambia</MenuItem>
+                                    <MenuItem value="Georgia">Georgia</MenuItem>
+                                    <MenuItem value="Germany">Germany</MenuItem>
+                                    <MenuItem value="Ghana">Ghana</MenuItem>
+                                    <MenuItem value="Gibraltar">Gibraltar</MenuItem>
+                                    <MenuItem value="Great Britain">Great Britain</MenuItem>
+                                    <MenuItem value="Greece">Greece</MenuItem>
+                                    <MenuItem value="Greenland">Greenland</MenuItem>
+                                    <MenuItem value="Grenada">Grenada</MenuItem>
+                                    <MenuItem value="Guadeloupe">Guadeloupe</MenuItem>
+                                    <MenuItem value="Guam">Guam</MenuItem>
+                                    <MenuItem value="Guatemala">Guatemala</MenuItem>
+                                    <MenuItem value="Guinea">Guinea</MenuItem>
+                                    <MenuItem value="Guyana">Guyana</MenuItem>
+                                    <MenuItem value="Haiti">Haiti</MenuItem>
+                                    <MenuItem value="Hawaii">Hawaii</MenuItem>
+                                    <MenuItem value="Honduras">Honduras</MenuItem>
+                                    <MenuItem value="Hong Kong">Hong Kong</MenuItem>
+                                    <MenuItem value="Hungary">Hungary</MenuItem>
+                                    <MenuItem value="Iceland">Iceland</MenuItem>
+                                    <MenuItem value="Indonesia">Indonesia</MenuItem>
+                                    <MenuItem value="India">India</MenuItem>
+                                    <MenuItem value="Iran">Iran</MenuItem>
+                                    <MenuItem value="Iraq">Iraq</MenuItem>
+                                    <MenuItem value="Ireland">Ireland</MenuItem>
+                                    <MenuItem value="Isle of Man">Isle of Man</MenuItem>
+                                    <MenuItem value="Israel">Israel</MenuItem>
+                                    <MenuItem value="Italy">Italy</MenuItem>
+                                    <MenuItem value="Jamaica">Jamaica</MenuItem>
+                                    <MenuItem value="Japan">Japan</MenuItem>
+                                    <MenuItem value="Jordan">Jordan</MenuItem>
+                                    <MenuItem value="Kazakhstan">Kazakhstan</MenuItem>
+                                    <MenuItem value="Kenya">Kenya</MenuItem>
+                                    <MenuItem value="Kiribati">Kiribati</MenuItem>
+                                    <MenuItem value="Korea North">Korea North</MenuItem>
+                                    <MenuItem value="Korea Sout">Korea South</MenuItem>
+                                    <MenuItem value="Kuwait">Kuwait</MenuItem>
+                                    <MenuItem value="Kyrgyzstan">Kyrgyzstan</MenuItem>
+                                    <MenuItem value="Laos">Laos</MenuItem>
+                                    <MenuItem value="Latvia">Latvia</MenuItem>
+                                    <MenuItem value="Lebanon">Lebanon</MenuItem>
+                                    <MenuItem value="Lesotho">Lesotho</MenuItem>
+                                    <MenuItem value="Liberia">Liberia</MenuItem>
+                                    <MenuItem value="Libya">Libya</MenuItem>
+                                    <MenuItem value="Liechtenstein">Liechtenstein</MenuItem>
+                                    <MenuItem value="Lithuania">Lithuania</MenuItem>
+                                    <MenuItem value="Luxembourg">Luxembourg</MenuItem>
+                                    <MenuItem value="Macau">Macau</MenuItem>
+                                    <MenuItem value="Macedonia">Macedonia</MenuItem>
+                                    <MenuItem value="Madagascar">Madagascar</MenuItem>
+                                    <MenuItem value="Malaysia">Malaysia</MenuItem>
+                                    <MenuItem value="Malawi">Malawi</MenuItem>
+                                    <MenuItem value="Maldives">Maldives</MenuItem>
+                                    <MenuItem value="Mali">Mali</MenuItem>
+                                    <MenuItem value="Malta">Malta</MenuItem>
+                                    <MenuItem value="Marshall Islands">Marshall Islands</MenuItem>
+                                    <MenuItem value="Martinique">Martinique</MenuItem>
+                                    <MenuItem value="Mauritania">Mauritania</MenuItem>
+                                    <MenuItem value="Mauritius">Mauritius</MenuItem>
+                                    <MenuItem value="Mayotte">Mayotte</MenuItem>
+                                    <MenuItem value="Mexico">Mexico</MenuItem>
+                                    <MenuItem value="Midway Islands">Midway Islands</MenuItem>
+                                    <MenuItem value="Moldova">Moldova</MenuItem>
+                                    <MenuItem value="Monaco">Monaco</MenuItem>
+                                    <MenuItem value="Mongolia">Mongolia</MenuItem>
+                                    <MenuItem value="Montserrat">Montserrat</MenuItem>
+                                    <MenuItem value="Morocco">Morocco</MenuItem>
+                                    <MenuItem value="Mozambique">Mozambique</MenuItem>
+                                    <MenuItem value="Myanmar">Myanmar</MenuItem>
+                                    <MenuItem value="Nambia">Nambia</MenuItem>
+                                    <MenuItem value="Nauru">Nauru</MenuItem>
+                                    <MenuItem value="Nepal">Nepal</MenuItem>
+                                    <MenuItem value="Netherland Antilles">Netherland Antilles</MenuItem>
+                                    <MenuItem value="Netherlands">Netherlands (Holland, Europe)</MenuItem>
+                                    <MenuItem value="Nevis">Nevis</MenuItem>
+                                    <MenuItem value="New Caledonia">New Caledonia</MenuItem>
+                                    <MenuItem value="New Zealand">New Zealand</MenuItem>
+                                    <MenuItem value="Nicaragua">Nicaragua</MenuItem>
+                                    <MenuItem value="Niger">Niger</MenuItem>
+                                    <MenuItem value="Nigeria">Nigeria</MenuItem>
+                                    <MenuItem value="Niue">Niue</MenuItem>
+                                    <MenuItem value="Norfolk Island">Norfolk Island</MenuItem>
+                                    <MenuItem value="Norway">Norway</MenuItem>
+                                    <MenuItem value="Oman">Oman</MenuItem>
+                                    <MenuItem value="Pakistan">Pakistan</MenuItem>
+                                    <MenuItem value="Palau Island">Palau Island</MenuItem>
+                                    <MenuItem value="Palestine">Palestine</MenuItem>
+                                    <MenuItem value="Panama">Panama</MenuItem>
+                                    <MenuItem value="Papua New Guinea">Papua New Guinea</MenuItem>
+                                    <MenuItem value="Paraguay">Paraguay</MenuItem>
+                                    <MenuItem value="Peru">Peru</MenuItem>
+                                    <MenuItem value="Phillipines">Philippines</MenuItem>
+                                    <MenuItem value="Pitcairn Island">Pitcairn Island</MenuItem>
+                                    <MenuItem value="Poland">Poland</MenuItem>
+                                    <MenuItem value="Portugal">Portugal</MenuItem>
+                                    <MenuItem value="Puerto Rico">Puerto Rico</MenuItem>
+                                    <MenuItem value="Qatar">Qatar</MenuItem>
+                                    <MenuItem value="Republic of Montenegro">Republic of Montenegro</MenuItem>
+                                    <MenuItem value="Republic of Serbia">Republic of Serbia</MenuItem>
+                                    <MenuItem value="Reunion">Reunion</MenuItem>
+                                    <MenuItem value="Romania">Romania</MenuItem>
+                                    <MenuItem value="Russia">Russia</MenuItem>
+                                    <MenuItem value="Rwanda">Rwanda</MenuItem>
+                                    <MenuItem value="St Barthelemy">St Barthelemy</MenuItem>
+                                    <MenuItem value="St Eustatius">St Eustatius</MenuItem>
+                                    <MenuItem value="St Helena">St Helena</MenuItem>
+                                    <MenuItem value="St Kitts-Nevis">St Kitts-Nevis</MenuItem>
+                                    <MenuItem value="St Lucia">St Lucia</MenuItem>
+                                    <MenuItem value="St Maarten">St Maarten</MenuItem>
+                                    <MenuItem value="St Pierre+Miquelon">St Pierre and Miquelon</MenuItem>
+                                    <MenuItem value="St Vincent+Grenadines">St Vincent and Grenadines</MenuItem>
+                                    <MenuItem value="Saipan">Saipan</MenuItem>
+                                    <MenuItem value="Samoa">Samoa</MenuItem>
+                                    <MenuItem value="Samoa American">Samoa American</MenuItem>
+                                    <MenuItem value="San Marino">San Marino</MenuItem>
+                                    <MenuItem value="Sao Tome+Principe">Sao Tome and Principe</MenuItem>
+                                    <MenuItem value="Saudi Arabia">Saudi Arabia</MenuItem>
+                                    <MenuItem value="Senegal">Senegal</MenuItem>
+                                    <MenuItem value="Seychelles">Seychelles</MenuItem>
+                                    <MenuItem value="Sierra Leone">Sierra Leone</MenuItem>
+                                    <MenuItem value="Singapore">Singapore</MenuItem>
+                                    <MenuItem value="Slovakia">Slovakia</MenuItem>
+                                    <MenuItem value="Slovenia">Slovenia</MenuItem>
+                                    <MenuItem value="Solomon Islands">Solomon Islands</MenuItem>
+                                    <MenuItem value="Somalia">Somalia</MenuItem>
+                                    <MenuItem value="South Africa">South Africa</MenuItem>
+                                    <MenuItem value="Spain">Spain</MenuItem>
+                                    <MenuItem value="Sri Lanka">Sri Lanka</MenuItem>
+                                    <MenuItem value="Sudan">Sudan</MenuItem>
+                                    <MenuItem value="Suriname">Suriname</MenuItem>
+                                    <MenuItem value="Swaziland">Swaziland</MenuItem>
+                                    <MenuItem value="Sweden">Sweden</MenuItem>
+                                    <MenuItem value="Switzerland">Switzerland</MenuItem>
+                                    <MenuItem value="Syria">Syria</MenuItem>
+                                    <MenuItem value="Tahiti">Tahiti</MenuItem>
+                                    <MenuItem value="Taiwan">Taiwan</MenuItem>
+                                    <MenuItem value="Tajikistan">Tajikistan</MenuItem>
+                                    <MenuItem value="Tanzania">Tanzania</MenuItem>
+                                    <MenuItem value="Thailand">Thailand</MenuItem>
+                                    <MenuItem value="Togo">Togo</MenuItem>
+                                    <MenuItem value="Tokelau">Tokelau</MenuItem>
+                                    <MenuItem value="Tonga">Tonga</MenuItem>
+                                    <MenuItem value="Trinidad+Tobago">Trinidad and Tobago</MenuItem>
+                                    <MenuItem value="Tunisia">Tunisia</MenuItem>
+                                    <MenuItem value="Turkey">Turkey</MenuItem>
+                                    <MenuItem value="Turkmenistan">Turkmenistan</MenuItem>
+                                    <MenuItem value="Turks+Caicos Is">Turks and Caicos Is</MenuItem>
+                                    <MenuItem value="Tuvalu">Tuvalu</MenuItem>
+                                    <MenuItem value="Uganda">Uganda</MenuItem>
+                                    <MenuItem value="United Kingdom">United Kingdom</MenuItem>
+                                    <MenuItem value="Ukraine">Ukraine</MenuItem>
+                                    <MenuItem value="United Arab Erimates">United Arab Emirates</MenuItem>
+                                    <MenuItem value="United States of America">United States of America</MenuItem>
+                                    <MenuItem value="Uraguay">Uruguay</MenuItem>
+                                    <MenuItem value="Uzbekistan">Uzbekistan</MenuItem>
+                                    <MenuItem value="Vanuatu">Vanuatu</MenuItem>
+                                    <MenuItem value="Vatican City State">Vatican City State</MenuItem>
+                                    <MenuItem value="Venezuela">Venezuela</MenuItem>
+                                    <MenuItem value="Vietnam">Vietnam</MenuItem>
+                                    <MenuItem value="Virgin Islands (Brit)">Virgin Islands (Brit)</MenuItem>
+                                    <MenuItem value="Virgin Islands (USA)">Virgin Islands (USA)</MenuItem>
+                                    <MenuItem value="Wake Island">Wake Island</MenuItem>
+                                    <MenuItem value="Wallis+Futana Is">Wallis and Futana Is</MenuItem>
+                                    <MenuItem value="Yemen">Yemen</MenuItem>
+                                    <MenuItem value="Zaire">Zaire</MenuItem>
+                                    <MenuItem value="Zambia">Zambia</MenuItem>
+                                    <MenuItem value="Zimbabwe">Zimbabwe</MenuItem>
+                                </Select>
+                            </FormControl>
 
-                            <div class="input_item">
-                                <label > City < br />
-                                    <input
-                                        class="input_field"
-                                        type="text"
+                            <div className={classes.container}>
+                                <FormControl className={classes.fromControl}>
+                                    <InputLabel>City</InputLabel>
+                                    <Input
+                                        id="city"
                                         value={this.state.city}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
-
-                            <div class="input_item">
-                                <label >Terms of Service< br />
-                                    <input
-                                        type="checkbox"
-                                        checked={this.state.tos}
-                                        onChange={this.handleChange}
                                     />
-                                </label >
-                                <label>I agree to the Terms of Services</label></div>
+                                </FormControl>< br />
+                            </div><br />
+
+                            <div className={classes.container}>
+                                <FormControlLabel
+                                    value="tos"
+                                    control={<Checkbox
+                                        color="primary"
+                                        checked={this.state.tos}
+                                        onChange={this.handleChange} />}
+                                    label="I agree to the Terms of Services"
+                                    labelPlacement="end"
+                                />
+                            </div>
                         </div>
 
                         <div class="bottom-item">
                             <h2>Mental Illnesses</h2>
                             <p>Please enter which mental illnesses do you suffer from? Please check that all that apply.</p>
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.addiction}
-                                onChange={this.handleChange} /><label>Addiction</label><br />
+                            <FormControlLabel
+                                value="addiction"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.addiction}
+                                    onChange={this.handleChange} />}
+                                label="Addiction"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.anxiety}
-                                onChange={this.handleChange} /><label>Anxiety</label><br />
+                            <FormControlLabel
+                                value="anxiety"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.anxiety}
+                                    onChange={this.handleChange} />}
+                                label="Anxiety"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.depression}
-                                onChange={this.handleChange} /><label>Depression</label><br />
+                            <FormControlLabel
+                                value="depression"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.depression}
+                                    onChange={this.handleChange} />}
+                                label="Depression"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.eating}
-                                onChange={this.handleChange} /><label>Eating Disorders</label><br />
+                            <FormControlLabel
+                                value="eating"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.eating}
+                                    onChange={this.handleChange} />}
+                                label="Eating Disorders"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.OCD}
-                                onChange={this.handleChange} /><label>OCD</label><br />
+                            <FormControlLabel
+                                value="ocd"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.ocd}
+                                    onChange={this.handleChange} />}
+                                label="OCD"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.phobias}
-                                onChange={this.handleChange} /><label>Phobias</label><br />
+                            <FormControlLabel
+                                value="phobias"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.phobias}
+                                    onChange={this.handleChange} />}
+                                label="Phobias"
+                                labelPlacement="end"
+                            /><br />
 
-                            <input
-                                type="checkbox"
-                                checked={this.state.ptsd}
-                                onChange={this.handleChange} /><label>Post Traumatic Stress Disorder</label>
+                            <FormControlLabel
+                                value="ptsd"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.ptsd}
+                                    onChange={this.handleChange} />}
+                                label="Post Traumatic Stress Disorder"
+                                labelPlacement="end"
+                            /><br />
                         </div>
                     </div><div class="sign_up_button">
                         <div class="buttons">
