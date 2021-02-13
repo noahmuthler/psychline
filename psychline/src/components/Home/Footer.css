@@ -1,12 +1,8 @@
 .footerContainer {
     color: black;
     display: flex;
-<<<<<<< HEAD
-    background-color: #487E95;
-=======
     flex-shrink: 1;
     background-color: #1687A7;
->>>>>>> c66ab23f8487755b0d337b574ca90927ffabac30
     padding-bottom: 70px;
 }
 
