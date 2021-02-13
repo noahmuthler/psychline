@@ -5,8 +5,6 @@ import { MenuItems } from "./components/Navbar/MenuItems";
 import { Button } from "./components/Button"
 import LoginButton from './components/Home/LoginButton'
 import Footer from "./components/Home/Footer";
-import { Checkbox, Input, InputLabel, FormControl } from '@material-ui/core'
-import { FormControlLabel } from "@material-ui/core";
 
 class SignUp extends React.Component {
 
@@ -16,8 +14,6 @@ class SignUp extends React.Component {
 
         this.handleInputChange = this.handleInputChange.bind(this);
     }
-
-    isChecked() { }
 
     handleInputChange(event) { }
 
@@ -34,51 +30,45 @@ class SignUp extends React.Component {
                         <div class="left-item" >
                             <div class="input_item">
                                 <h2 > Account Details </h2>
-
-                                <FormControl>
-                                    <InputLabel>Email Address</InputLabel>
-                                    <Input
+                                <label > Email Address < br />
+                                    <input
                                         class="input_field"
-                                        id="email"
+                                        type="email"
                                         value={this.state.email}
                                         onChange={this.handleChange}
-                                    />
-                                </FormControl>
+                                    />  <br />
+                                </label>
                             </div>
 
                             <div class="input_item">
-                                <FormControl>
-                                    <InputLabel>Username</InputLabel>
-                                    <Input
+                                <label > Username < br />
+                                    <input
                                         class="input_field"
-                                        id="username"
+                                        type="text"
                                         value={this.state.username}
                                         onChange={this.handleChange}
-                                    />
-
-                                </FormControl></div>
+                                    /><br />
+                                </label></div>
 
                             <div class="input_item">
-                                <FormControl>
-                                    <InputLabel>Password</InputLabel>
-                                    <Input
+                                <label > Password < br />
+                                    <input
                                         class="input_field"
-                                        id="password"
+                                        type="password"
                                         value={this.state.password}
                                         onChange={this.handleChange}
-                                    />
-                                </FormControl></div>
+                                    /><br />
+                                </label></div>
 
                             <div class="input_item">
-                                <FormControl>
-                                    <InputLabel>Confirm Password</InputLabel>
-                                    <Input
+                                <label > Confirm Password < br />
+                                    <input
                                         class="input_field"
-                                        id="confirmPassword"
+                                        type="password"
                                         value={this.state.confirmPassword}
                                         onChange={this.handleChange}
-                                    />
-                                </FormControl></div>
+                                    /><br />
+                                </label> </div >
                         </div>
 
                         <div class="right-item" >
@@ -94,16 +84,14 @@ class SignUp extends React.Component {
                                 </label></div>
 
                             <div class="input_item">
-
-                                <FormControl>
-                                    <InputLabel>Date of Birth</InputLabel>
-                                    <Input
+                                <label> Date of Birth < br />
+                                    <input
                                         class="input_field"
-                                        id="dob"
+                                        type="date"
                                         value={this.state.dob}
                                         onChange={this.handleChange}
-                                    />
-                                </FormControl></div>
+                                    /><br />
+                                </label></div>
 
                             <div class="input_item">
                                 <label > Gender < br />
@@ -371,26 +359,25 @@ class SignUp extends React.Component {
                                     </select> < br />
                                 </label></div>
 
-
                             <div class="input_item">
-                                <FormControl>
-                                    <InputLabel>City</InputLabel>
-                                    <Input
-                                        class="city"
-                                        id="city"
+                                <label > City < br />
+                                    <input
+                                        class="input_field"
+                                        type="text"
                                         value={this.state.city}
                                         onChange={this.handleChange}
-                                    />
-                                </FormControl></div>
+                                    /><br />
+                                </label></div>
 
                             <div class="input_item">
-                                <FormControlLabel
-                                    value={this.state.tos}
-                                    control={<Checkbox color="primary" />}
-                                    label="I agree to the Terms of Services"
-                                    labelPlacement="end"
-                                />
-                            </div>
+                                <label >Terms of Service< br />
+                                    <input
+                                        type="checkbox"
+                                        checked={this.state.tos}
+                                        onChange={this.handleChange}
+                                    />
+                                </label >
+                                <label>I agree to the Terms of Services</label></div>
                         </div>
 
                         <div class="bottom-item">
@@ -436,7 +423,7 @@ class SignUp extends React.Component {
                         <div class="buttons">
                             <Button buttonStyle="btn--signup">Sign Up</Button>
                         </div>
-                        <Footer />
+                    <Footer />
                     </div>
                 </form >
             </body>
