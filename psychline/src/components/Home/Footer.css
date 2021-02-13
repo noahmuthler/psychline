@@ -103,3 +103,19 @@
         margin-left: 2rem;
     }
 }
+
+@media only screen and (max-width: 1100px) and (min-width: 901px) {
+    .footerFirstCol {
+        margin-left: 10rem;
+        margin-right: 2rem;
+    }
+
+    .footerSecondCol {
+        margin-left: 8rem;
+        margin-right: 2rem;
+    }
+
+    .footerThirdCol {
+        margin-left: 8rem;
+    }
+}
