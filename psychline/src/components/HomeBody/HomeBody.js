@@ -15,7 +15,12 @@ export default function HomeBody() {
         <div>
             <h2 className="body-give-title">get help, give help</h2>
             <p className="body-give-text">connect with someone who understands</p>
+<<<<<<< HEAD
+            <p className="body-give-text">PsychLine is a free and safe platform where you can chat with people who are going through similar problems, but also have similar interests! Psychline can be utilized as the first step in your mental health journy.
+            at PyschLine you are in complete control of confedentiality, who you chat with, and how many people you want to talk to. start your journey today!</p>
+=======
             <p className="body-give-text give-text-p-two">PsychLine is a free platform where you can chat with people who are going through similar problems, but also have similar interests! at PyschLine you are in complete control of confedentiality, who you chat with, and how many people you want to talk to. start your journey today!</p>
+>>>>>>> c66ab23f8487755b0d337b574ca90927ffabac30
             <img src={GiveGetImage} className="give-img"/>
             <h2 className="works-t">how it works</h2>
             <hr className="rule"/>
@@ -33,7 +38,7 @@ export default function HomeBody() {
                     </div>
                     <div className="components-divs">
                         <h3 className="works-components-t">start</h3>
-                        <p className="works-components-p">start your journey today, for FREE! our mission is to try and help people become the person they want to be, while helping others in the process.</p>
+                        <p className="works-components-p">start your journey today, for FREE! ADD MORE TEXT HERE</p>
                         <img src={StartImage} className="works-img" />
                     </div>
                 </div>
