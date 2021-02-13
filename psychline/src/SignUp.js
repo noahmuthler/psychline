@@ -63,25 +63,27 @@ class SignUp extends React.Component {
                                 </FormControl><br />
                             </div>
 
-                            <div class="input_item">
-                                <label > Password < br />
-                                    <input
-                                        class="input_field"
-                                        type="password"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Password</InputLabel>
+                                    <Input
+                                        id="password"
                                         value={this.state.password}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                                    />
+                                </FormControl><br />
+                            </div>
 
-                            <div class="input_item">
-                                <label > Confirm Password < br />
-                                    <input
-                                        class="input_field"
-                                        type="password"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Confirm Password</InputLabel>
+                                    <Input
+                                        id="confirmPassword"
                                         value={this.state.confirmPassword}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label> </div >
+                                    />
+                                </FormControl><br />
+                            </div>
                         </div>
 
                         <div class="right-item" >
