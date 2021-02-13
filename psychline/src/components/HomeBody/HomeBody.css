@@ -125,7 +125,7 @@
     align-items: center;
     min-height: 300px;
     height: auto;
-    width: 12%;
+    width: 20%;
     border: 1px solid black;
     box-shadow: 2px 5px 10px 5px #888888;
 }
@@ -142,4 +142,34 @@
     font-family: 'Open Sans', sans-serif;
     font-size: 16px;
     width: 75%;
+}
+
+@media only screen and (max-width: 640px) {
+    .works-components {
+        flex-direction: column;
+    }
+
+    .components-divs {
+        width: 100%;
+    }
+
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial-cards {
+        width: 60%;
+        margin-top: 6%;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+    .testimonials {
+        flex-direction: column;
+    }
+
+    .testimonial-cards {
+        width: 50%;
+        margin-top: 6%;
+    }
 }
