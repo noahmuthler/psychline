@@ -21,17 +21,17 @@ export default function HomeBody() {
             <hr className="rule"/>
             <Fade big>
                 <div className="works-components">
-                    <div>
+                    <div className="components-divs">
                         <h3 className="works-components-t">personalize</h3>
                         <p className="works-components-p">when you sign up, you will be able to personalize your profile by selecting what you are interested in and what you are stuggling with. these selections will allow us to be able to connect you to people just like you!</p>
                         <img src={PersonalImage} className="works-img" />
                     </div>
-                    <div>
+                    <div className="components-divs">
                         <h3 className="works-components-t">discover</h3>
                         <p className="works-components-p">after signing up, you will have the oppurtunity to meet new and exciting people! at any point you will be able to continuing conversations or branch out and discover!</p>
                         <img src={DiscoverImage} className="works-img" />
                     </div>
-                    <div>
+                    <div className="components-divs">
                         <h3 className="works-components-t">start</h3>
                         <p className="works-components-p">start your journey today, for FREE! our mission is to try and help people become the person they want to be, while helping others in the process.</p>
                         <img src={StartImage} className="works-img" />

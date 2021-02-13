@@ -35,8 +35,10 @@
 
 .works-components {
     display: flex;
-    justify-content: center;
-    align-items: center;
+}
+
+.components-divs {
+    width: 33.3%;
 }
 
 .works-components-t {
