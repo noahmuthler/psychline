@@ -52,15 +52,16 @@ class SignUp extends React.Component {
                                 </FormControl><br />
                             </div>
 
-                            <div class="input_item">
-                                <label > Username < br />
-                                    <input
-                                        class="input_field"
-                                        type="text"
+                            <div className={classes.container}>
+                                <FormControl className={classes.formControl}>
+                                    <InputLabel>Username</InputLabel>
+                                    <Input
+                                        id="username"
                                         value={this.state.username}
                                         onChange={this.handleChange}
-                                    /><br />
-                                </label></div>
+                                    />
+                                </FormControl><br />
+                            </div>
 
                             <div class="input_item">
                                 <label > Password < br />
