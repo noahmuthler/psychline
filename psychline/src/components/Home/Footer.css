@@ -45,28 +45,27 @@
     color: black;
     text-align: center;
     padding: 20px;
-<<<<<<< HEAD
-    background-color: #487E95;
-}
-=======
-    background-color: #1687A7;
+    <<<<<<< HEAD background-color: #487E95;
 }
 
+=======background-color: #1687A7;
+
+}
 @media only screen and (max-width: 640px) {
     .footerContainer {
         flex-direction: column;
     }
-
+    
     .footerText {
         flex-direction: column;
     }
-
+    
     .footerImg {
         display: block;
         margin-left: auto;
         margin-right: auto;
     }
-
+    
     .footerFirstCol {
         display: block;
         margin-left: auto;
@@ -74,7 +73,7 @@
         width: 75%;
         text-align: center;
     }
-
+    
     .footerSecondCol {
         display: block;
         margin-left: auto;
@@ -82,7 +81,7 @@
         width: 75%;
         text-align: center;
     }
-
+    
     .footerThirdCol {
         display: block;
         margin-left: auto;
@@ -91,36 +90,34 @@
         text-align: center;
     }
 }
-
 @media only screen and (max-width: 900px) and (min-width: 641px) {
     .footerFirstCol {
         margin-left: 4rem;
         margin-right: 2rem;
     }
-
+    
     .footerSecondCol {
         margin-left: 2rem;
         margin-right: 2rem;
     }
-
+    
     .footerThirdCol {
         margin-left: 2rem;
     }
 }
-
 @media only screen and (max-width: 1100px) and (min-width: 901px) {
     .footerFirstCol {
         margin-left: 10rem;
         margin-right: 2rem;
     }
-
+    
     .footerSecondCol {
         margin-left: 8rem;
         margin-right: 2rem;
     }
-
+    
     .footerThirdCol {
         margin-left: 8rem;
     }
 }
->>>>>>> c66ab23f8487755b0d337b574ca90927ffabac30
+>>>>>>>c66ab23f8487755b0d337b574ca90927ffabac30
