@@ -11,6 +11,13 @@
     color: grey;
 }
 
+.give-text-p-two {
+    width: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
 .give-img {
     display: block;
     margin-left: auto;
@@ -160,6 +167,10 @@
     .testimonial-cards {
         width: 60%;
         margin-top: 6%;
+    }
+
+    .give-text-p-two {
+        width: 85%;
     }
 }
 
