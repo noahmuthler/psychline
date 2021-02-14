@@ -1,5 +1,5 @@
 .NavbarItems {
-    background: #D3E0EA;
+    background: #1687A7;
     height: 80px;
     display: flex;
     justify-content: flex;
@@ -9,11 +9,11 @@
 }
 
 .navbar-logo {
-    color: blue;
+    color: white;
     justify-self: left;
     margin-left: 20px;
     font-family: 'Work Sans', sans-serif;
-    font-weight:9800;
+    font-weight: 9800;
     font-style: italic;
     cursor: pointer;
 }
@@ -23,8 +23,8 @@
     font-size: 1.6 rem;
 }
 
-.menu-icon{
-    justify-content:right;
+.menu-icon {
+    justify-content: right;
 }
 
 .nav-menu {
