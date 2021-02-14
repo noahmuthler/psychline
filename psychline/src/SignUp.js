@@ -483,6 +483,16 @@ class SignUp extends React.Component {
                                 label="Post Traumatic Stress Disorder"
                                 labelPlacement="end"
                             /><br />
+
+                            <FormControlLabel
+                                value="bully"
+                                control={<Checkbox
+                                    color="primary"
+                                    checked={this.state.bully}
+                                    onChange={this.handleChange} />}
+                                label="Bullying"
+                                labelPlacement="end"
+                            /><br />
                         </div>
                     </div><div class="sign_up_button">
                         <div class="buttons">
