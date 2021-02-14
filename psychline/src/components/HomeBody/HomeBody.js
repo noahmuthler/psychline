@@ -23,7 +23,7 @@ export default function HomeBody() {
                 <div className="works-components">
                     <div className="components-divs">
                         <h3 className="works-components-t">personalize</h3>
-                        <p className="works-components-p">when you sign up, you will be able to personalize your profile by selecting what you are interested in and what you are stuggling with. these selections will allow us to be able to connect you to people just like you!</p>
+                        <p className="works-components-p">you will be able to personalize your profile by selecting what you are interested in and what you are stuggling with. this will allow us to be able to connect you to people just like you!</p>
                         <img src={PersonalImage} className="works-img" />
                     </div>
                     <div className="components-divs">
@@ -33,7 +33,7 @@ export default function HomeBody() {
                     </div>
                     <div className="components-divs">
                         <h3 className="works-components-t">start</h3>
-                        <p className="works-components-p">start your journey today, for FREE! ADD MORE TEXT HERE</p>
+                        <p className="works-components-p">start chatting 1-on-1 or in a group chat for FREE! click the sign up button below to personalize your account, discover new people, and begin your mental health journey!</p>
                         <img src={StartImage} className="works-img" />
                     </div>
                 </div>
@@ -41,7 +41,7 @@ export default function HomeBody() {
             <h2 className="mission">our mission</h2>
             <hr className="rule"></hr>
             <Fade big>
-                <p className="mission-p">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer a nulla efficitur, viverra ipsum nec, posuere nunc. Sed eget sem ac neque efficitur tempus. Nunc quis scelerisque ex. Proin ornare, magna sed molestie mollis, erat est feugiat libero, nec bibendum erat elit imperdiet nibh. Proin lectus ex, consequat nec nulla in, fermentum viverra dui. Quisque id pulvinar urna. Quisque finibus gravida tortor vitae hendrerit. Mauris mollis blandit accumsan. Fusce feugiat imperdiet rhoncus. Nunc sodales consectetur lorem, a lobortis ante suscipit finibus. Nunc molestie congue risus, vitae rhoncus elit fringilla et.
+                <p className="mission-p">our mission here at PsychLine is to provide the oppurtunity for people to take the first step in their mental health journey in a safe enviornment. we hope to change the stigma of people feeling the need to be ashamed of their mental health struggles. our platform was also designed for people who cannot afford a psychiatrist's fee. our main motivation is to provide an outlet for people who would not have any other option if not for PsychLine. 
 
                 </p>
                 <div className="mission-btn-container"><a href="/about"><button className="mission-btn">about us</button></a></div>
