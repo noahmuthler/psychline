@@ -13,12 +13,12 @@ export const MenuItems = [
     },
     {
         title: 'Login',
-        url: null,
+        url: '/',
         cName: 'nav-links-login'
     },
     {
         title: 'Account',
-        url:/* Url Later Down The Road */ '#',
+        url:/* Url Later Down The Road */ '/signup',
         cName: 'nav-links-account'
     }
 ]
