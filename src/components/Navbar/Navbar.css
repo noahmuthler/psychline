@@ -1,0 +1,69 @@
+.NavbarItems {
+    background:#D3E0EA;
+    height: 80px;
+    display: flex;
+    justify-content: flex;
+    align-items: center;
+    font: size 1.2rem;
+    overflow: none;
+}
+
+.navbar-logo {
+    color: #1687A7;
+    justify-self: left;
+    margin-left: 20px;
+    font-family: 'Work Sans', sans-serif;
+    font-weight: 9800;
+    font-style: italic;
+    cursor: pointer;
+}
+
+.fa-react {
+    margin-left: .5 rem;
+    font-size: 1.6 rem;
+}
+
+.menu-icon {
+    justify-content: right;
+}
+
+.nav-menu {
+    display: grid;
+    grid-template-columns: repeat(5, auto);
+    grid-gap: 10px;
+    list-style: none;
+    text-align: center;
+    width: 70w;
+    position: relative;
+    right: -50%;
+    margin-right: 2rem;
+}
+
+.nav-links {
+    color: white;
+    text-decoration: none;
+    padding: 0.5rem 1rem;
+}
+
+.nav-links:hover {
+    background-color: pink;
+    border-radius: 4px;
+    transition: all 0.2s ease out;
+}
+
+.fa-bars {
+    color: #fff;
+}
+
+.nav-links-mobile {
+    display: none;
+    margin: 0;
+}
+
+.ham-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
+}

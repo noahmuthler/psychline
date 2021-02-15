@@ -1,0 +1,42 @@
+.link {
+    display: block;
+    margin-left: 10px;
+    margin-right: auto;
+    font-size: small;
+}
+
+.closeButton {
+    display: block;
+    margin-right: 0;
+    margin-left: auto;
+    color: black;
+    float: right;
+}
+
+div > .log-but {
+    color: white;
+    font-size: 24px;
+}
+
+div > .log-but:hover {
+    background: none;
+}
+
+#log {
+    color: white;
+    font-family: haboro-contrast-normal, sans-serif;
+    font-weight: 500;
+    font-style: normal;
+    border-color: white;
+}
+
+.logo {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+div > #login-title {
+    font-size: xx-large;
+}

@@ -1,0 +1,121 @@
+.footerContainer {
+    color: black;
+    display: flex;
+    flex-shrink: 1;
+    background-color: #1687A7;
+    padding-bottom: 70px;
+}
+
+.footerText {
+    display: flex;
+}
+
+.footerFirstCol {
+    margin-left: 30%;
+    margin-right: 60%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footerSecondCol {
+    margin-right: 60%;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footerThirdCol {
+    width: 200px;
+    display: inline-block;
+    white-space: nowrap;
+}
+
+.footerImg {
+    width: 100px;
+    height: 100px;
+    margin-left: 30%;
+    margin-top: 40%;
+}
+
+.footerItem {
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.footerBottomText {
+    color: black;
+    text-align: center;
+    padding: 20px;
+    background-color: #1687A7;
+}
+
+@media only screen and (max-width: 640px) {
+    .footerContainer {
+        flex-direction: column;
+    }
+
+    .footerText {
+        flex-direction: column;
+    }
+
+    .footerImg {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .footerFirstCol {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        text-align: center;
+    }
+
+    .footerSecondCol {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        text-align: center;
+    }
+
+    .footerThirdCol {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        width: 75%;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 900px) and (min-width: 641px) {
+    .footerFirstCol {
+        margin-left: 4rem;
+        margin-right: 2rem;
+    }
+
+    .footerSecondCol {
+        margin-left: 2rem;
+        margin-right: 2rem;
+    }
+
+    .footerThirdCol {
+        margin-left: 2rem;
+    }
+}
+
+@media only screen and (max-width: 1100px) and (min-width: 901px) {
+    .footerFirstCol {
+        margin-left: 10rem;
+        margin-right: 2rem;
+    }
+
+    .footerSecondCol {
+        margin-left: 8rem;
+        margin-right: 2rem;
+    }
+
+    .footerThirdCol {
+        margin-left: 8rem;
+    }
+}
