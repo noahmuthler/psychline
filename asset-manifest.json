@@ -1,0 +1,26 @@
+{
+  "files": {
+    "main.css": "/psychline/static/css/main.061569e4.chunk.css",
+    "main.js": "/psychline/static/js/main.48c3e22d.chunk.js",
+    "main.js.map": "/psychline/static/js/main.48c3e22d.chunk.js.map",
+    "runtime-main.js": "/psychline/static/js/runtime-main.de9429f3.js",
+    "runtime-main.js.map": "/psychline/static/js/runtime-main.de9429f3.js.map",
+    "static/js/2.2e29d2c7.chunk.js": "/psychline/static/js/2.2e29d2c7.chunk.js",
+    "static/js/2.2e29d2c7.chunk.js.map": "/psychline/static/js/2.2e29d2c7.chunk.js.map",
+    "index.html": "/psychline/index.html",
+    "static/css/main.061569e4.chunk.css.map": "/psychline/static/css/main.061569e4.chunk.css.map",
+    "static/js/2.2e29d2c7.chunk.js.LICENSE.txt": "/psychline/static/js/2.2e29d2c7.chunk.js.LICENSE.txt",
+    "static/media/Caricatura_de_una_chica_soriendo.96348e34.svg": "/psychline/static/media/Caricatura_de_una_chica_soriendo.96348e34.svg",
+    "static/media/HomeNav.css": "/psychline/static/media/bannerPic.d2d00f98.jpg",
+    "static/media/kade-img.207ba229.jpg": "/psychline/static/media/kade-img.207ba229.jpg",
+    "static/media/noahIMG.d3a043f6.jpeg": "/psychline/static/media/noahIMG.d3a043f6.jpeg",
+    "static/media/quintinIMG.a76fe344.jpeg": "/psychline/static/media/quintinIMG.a76fe344.jpeg",
+    "static/media/smiling_face_of_a_child.23fe4878.svg": "/psychline/static/media/smiling_face_of_a_child.23fe4878.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.de9429f3.js",
+    "static/js/2.2e29d2c7.chunk.js",
+    "static/css/main.061569e4.chunk.css",
+    "static/js/main.48c3e22d.chunk.js"
+  ]
+}
