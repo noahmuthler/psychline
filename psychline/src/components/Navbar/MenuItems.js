@@ -2,22 +2,22 @@ import LoginButton from "../Home/LoginButton";
 
 export const MenuItems = [
     {
-        title: 'Home',
+        title: 'home',
         url:'/',
         cName: 'nav-links-home'
     },
     {
-        title: 'About Us',
+        title: 'about us',
         url:'/about',
         cName: 'nav-links-us'
     },
     {
-        title: 'Login',
+        title: 'login',
         url: '/',
         cName: 'nav-links-login'
     },
     {
-        title: 'Account',
+        title: 'account',
         url:/* Url Later Down The Road */ '/signup',
         cName: 'nav-links-account'
     }

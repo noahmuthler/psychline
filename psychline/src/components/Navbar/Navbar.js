@@ -19,13 +19,13 @@ class Navbar extends Component {
     }
 
     handleLogin(item_title) {
-        if (item_title == "Login") {
+        if (item_title == "login") {
             <LoginButton />
         }
     }
 
     handleClick(item_title, item_url) {
-        if (item_title != 'Login') {
+        if (item_title != 'login') {
             this.history.push(item_url)
         } else {
             <LoginButton />
