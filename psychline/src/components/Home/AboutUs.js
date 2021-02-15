@@ -7,7 +7,7 @@ import noah from "./noahIMG.jpeg";
 import micah from "./micahIMG.jpeg";
 import kevin from "./kevinIMG.jpeg";
 import quintin from "./quintinIMG.jpeg";
-import kade from "./kadeIMG.jpeg";
+import kade from "./kade-img.jpg";
 
 function AboutUs() {
     return (
@@ -22,7 +22,7 @@ function AboutUs() {
             </div>
             <hr></hr>
             <div className="box">
-                <div><img src={kade} /></div>
+                <div><img src={kade} className="kade-img"/></div>
                 <div className="text"><h3>kade carlson</h3>
                     <p className="text">kade is an honors student at Pennsylvania State University. kade grew up in several different areas but graduated high school in upstate new york. kade's interests include programming, spacecraft design, astronomy, robotics, video games, and chess. kade is responsible for most of PsychLine's codebase. kade will also take care of many of the business aspects of the company. kade has been diagnosed with several different mental disorders in the past including anxiety and depression. his personal struggles with mental health led him to help with the creation of PsychLine. kade's goal for PsychLine is to offer a place for people to take that initial step and open up about their struggles and hopefully seek more help in the future.</p>
                 </div>
