@@ -1,26 +1,23 @@
 {
   "files": {
-    "main.css": "/psychline/psychline/static/css/main.43b6aea8.chunk.css",
-    "main.js": "/psychline/psychline/static/js/main.ebbd80b5.chunk.js",
-    "main.js.map": "/psychline/psychline/static/js/main.ebbd80b5.chunk.js.map",
-    "runtime-main.js": "/psychline/psychline/static/js/runtime-main.f5f90d25.js",
-    "runtime-main.js.map": "/psychline/psychline/static/js/runtime-main.f5f90d25.js.map",
-    "static/js/2.2e29d2c7.chunk.js": "/psychline/psychline/static/js/2.2e29d2c7.chunk.js",
-    "static/js/2.2e29d2c7.chunk.js.map": "/psychline/psychline/static/js/2.2e29d2c7.chunk.js.map",
-    "index.html": "/psychline/psychline/index.html",
-    "static/css/main.43b6aea8.chunk.css.map": "/psychline/psychline/static/css/main.43b6aea8.chunk.css.map",
-    "static/js/2.2e29d2c7.chunk.js.LICENSE.txt": "/psychline/psychline/static/js/2.2e29d2c7.chunk.js.LICENSE.txt",
-    "static/media/Caricatura_de_una_chica_soriendo.96348e34.svg": "/psychline/psychline/static/media/Caricatura_de_una_chica_soriendo.96348e34.svg",
-    "static/media/HomeNav.css": "/psychline/psychline/static/media/bannerPic.d2d00f98.jpg",
-    "static/media/kade-img.207ba229.jpg": "/psychline/psychline/static/media/kade-img.207ba229.jpg",
-    "static/media/noahIMG.d3a043f6.jpeg": "/psychline/psychline/static/media/noahIMG.d3a043f6.jpeg",
-    "static/media/quintinIMG.a76fe344.jpeg": "/psychline/psychline/static/media/quintinIMG.a76fe344.jpeg",
-    "static/media/smiling_face_of_a_child.23fe4878.svg": "/psychline/psychline/static/media/smiling_face_of_a_child.23fe4878.svg"
+    "main.css": "/pl/static/css/main.8c8b27cf.chunk.css",
+    "main.js": "/pl/static/js/main.abf032bf.chunk.js",
+    "main.js.map": "/pl/static/js/main.abf032bf.chunk.js.map",
+    "runtime-main.js": "/pl/static/js/runtime-main.7e4e58a0.js",
+    "runtime-main.js.map": "/pl/static/js/runtime-main.7e4e58a0.js.map",
+    "static/js/2.6a5c3d96.chunk.js": "/pl/static/js/2.6a5c3d96.chunk.js",
+    "static/js/2.6a5c3d96.chunk.js.map": "/pl/static/js/2.6a5c3d96.chunk.js.map",
+    "static/js/3.6081f2c3.chunk.js": "/pl/static/js/3.6081f2c3.chunk.js",
+    "static/js/3.6081f2c3.chunk.js.map": "/pl/static/js/3.6081f2c3.chunk.js.map",
+    "index.html": "/pl/index.html",
+    "static/css/main.8c8b27cf.chunk.css.map": "/pl/static/css/main.8c8b27cf.chunk.css.map",
+    "static/js/2.6a5c3d96.chunk.js.LICENSE.txt": "/pl/static/js/2.6a5c3d96.chunk.js.LICENSE.txt",
+    "static/media/logo.6ce24c58.svg": "/pl/static/media/logo.6ce24c58.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f5f90d25.js",
-    "static/js/2.2e29d2c7.chunk.js",
-    "static/css/main.43b6aea8.chunk.css",
-    "static/js/main.ebbd80b5.chunk.js"
+    "static/js/runtime-main.7e4e58a0.js",
+    "static/js/2.6a5c3d96.chunk.js",
+    "static/css/main.8c8b27cf.chunk.css",
+    "static/js/main.abf032bf.chunk.js"
   ]
 }
