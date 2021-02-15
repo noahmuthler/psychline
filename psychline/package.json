@@ -1,7 +1,7 @@
 {
   "name": "psychline",
   "version": "0.1.0",
-  "homepage": "https://noahmuthler.github.io/psychline",
+  "homepage": "https://noahmuthler.github.io/index.html",
   "private": true,
   "dependencies": {
     "@material-ui/core": "^4.11.3",
