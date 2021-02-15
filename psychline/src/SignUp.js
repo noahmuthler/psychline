@@ -39,15 +39,15 @@ class SignUp extends React.Component {
                 <Navbar />
                 <div class="heading" >
                     <h1 class="heading_item"> create account </h1>
-                    <p class="heading_item"> registering is really simple, just input the required fields and you are good to go! * Required </p>
+                    <p class="heading_item"> registering is really simple, just input the required fields and you are good to go! * required </p>
                 </div >
                 <form >
                     <div class="grid-container-account" >
                         <div class="left-item" >
-                            <h2 > Account Details </h2>
+                            <h2 > account details </h2>
                             <div className={classes.container}>
                                 <FormControl className={classes.formControl}>
-                                    <InputLabel>Email Address</InputLabel>
+                                    <InputLabel>email address</InputLabel>
                                     <Input
                                         id="email"
                                         value={this.state.email}
@@ -58,7 +58,7 @@ class SignUp extends React.Component {
 
                             <div className={classes.container}>
                                 <FormControl className={classes.formControl}>
-                                    <InputLabel>Username</InputLabel>
+                                    <InputLabel>username</InputLabel>
                                     <Input
                                         id="username"
                                         value={this.state.username}
@@ -69,7 +69,7 @@ class SignUp extends React.Component {
 
                             <div className={classes.container}>
                                 <FormControl className={classes.formControl}>
-                                    <InputLabel>Password</InputLabel>
+                                    <InputLabel>password</InputLabel>
                                     <Input
                                         id="password"
                                         value={this.state.password}
@@ -80,7 +80,7 @@ class SignUp extends React.Component {
 
                             <div className={classes.container}>
                                 <FormControl className={classes.formControl}>
-                                    <InputLabel>Confirm Password</InputLabel>
+                                    <InputLabel>confirm password</InputLabel>
                                     <Input
                                         id="confirmPassword"
                                         value={this.state.confirmPassword}
@@ -91,10 +91,10 @@ class SignUp extends React.Component {
                         </div>
 
                         <div class="right-item" >
-                            <h2> Profile Details </h2>
+                            <h2> profile details </h2>
                             <div className={classes.container}>
                                 <FormControl className={classes.fromControl}>
-                                    <InputLabel>Name</InputLabel>
+                                    <InputLabel>name</InputLabel>
                                     <Input
                                         id="name"
                                         value={this.state.name}
@@ -105,7 +105,7 @@ class SignUp extends React.Component {
 
                             <TextField
                                 id="dob"
-                                label="Birthday"
+                                label="birthday"
                                 type="date"
                                 value={this.state.dob}
                                 className={classes.textField}
@@ -115,7 +115,7 @@ class SignUp extends React.Component {
                             /><br /><br />
 
                             <FormControl className={classes.formControlSelect}>
-                                <InputLabel>Gender</InputLabel>
+                                <InputLabel>gender</InputLabel>
                                 <Select
                                     labelId="gender_label"
                                     id="gender"
@@ -129,7 +129,7 @@ class SignUp extends React.Component {
                             </FormControl><br /><br />
 
                             <FormControl className={classes.formControlSelect}>
-                                <InputLabel>Country</InputLabel>
+                                <InputLabel>country</InputLabel>
                                 <Select
                                     labelId="country_label"
                                     id="country"
@@ -388,7 +388,7 @@ class SignUp extends React.Component {
 
                             <div className={classes.container}>
                                 <FormControl className={classes.fromControl}>
-                                    <InputLabel>City</InputLabel>
+                                    <InputLabel>city</InputLabel>
                                     <Input
                                         id="city"
                                         value={this.state.city}
@@ -404,15 +404,15 @@ class SignUp extends React.Component {
                                         color="primary"
                                         checked={this.state.tos}
                                         onChange={this.handleChange} />}
-                                    label="I agree to the Terms of Services"
+                                    label="i agree to the terms of services"
                                     labelPlacement="end"
                                 />
                             </div>
                         </div>
 
                         <div class="bottom-item">
-                            <h2>Mental Illnesses</h2>
-                            <p>Please enter which mental illnesses do you suffer from? Please check that all that apply.</p>
+                            <h2>mental illnesses</h2>
+                            <p>please enter which mental illnesses do you suffer from? please check that all that apply.</p>
 
                             <FormControlLabel
                                 value="addiction"
@@ -420,7 +420,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.addiction}
                                     onChange={this.handleChange} />}
-                                label="Addiction"
+                                label="addiction"
                                 labelPlacement="end"
                             /><br />
 
@@ -430,7 +430,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.anxiety}
                                     onChange={this.handleChange} />}
-                                label="Anxiety"
+                                label="anxiety"
                                 labelPlacement="end"
                             /><br />
 
@@ -440,7 +440,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.depression}
                                     onChange={this.handleChange} />}
-                                label="Depression"
+                                label="depression"
                                 labelPlacement="end"
                             /><br />
 
@@ -450,7 +450,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.eating}
                                     onChange={this.handleChange} />}
-                                label="Eating Disorders"
+                                label="eating disorders"
                                 labelPlacement="end"
                             /><br />
 
@@ -470,7 +470,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.phobias}
                                     onChange={this.handleChange} />}
-                                label="Phobias"
+                                label="phobias"
                                 labelPlacement="end"
                             /><br />
 
@@ -480,7 +480,7 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.ptsd}
                                     onChange={this.handleChange} />}
-                                label="Post Traumatic Stress Disorder"
+                                label="post traumatic stress disorder"
                                 labelPlacement="end"
                             /><br />
 
@@ -490,13 +490,13 @@ class SignUp extends React.Component {
                                     color="primary"
                                     checked={this.state.bully}
                                     onChange={this.handleChange} />}
-                                label="Bullying"
+                                label="bullying"
                                 labelPlacement="end"
                             /><br />
                         </div>
                     </div><div class="sign_up_button">
                         <div class="buttons">
-                            <Button buttonStyle="btn--signup">Sign Up</Button>
+                            <Button buttonStyle="btn--signup">sign up</Button>
                         </div>
                     </div>
                 </form >
