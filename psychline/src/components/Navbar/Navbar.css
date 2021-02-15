@@ -56,5 +56,14 @@
 }
 
 .nav-links-mobile {
-    display: none
+    display: none;
+    margin: 0;
+}
+
+.ham-icon {
+    display: none;
+}
+
+@media only screen and (max-width: 600px) {
+    
 }

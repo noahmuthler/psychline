@@ -35,9 +35,9 @@ class Navbar extends Component {
     render() {
         return (
             <nav className="NavbarItems">
-                <h1 className="navbar-logo">PsychLine<i className="fab fa-react"> </i></h1>
+                <h1 className="navbar-logo">PsychLine</h1>
                 <div className="menu-icon" onClick={this.handleClick}>
-                    <i className={this.state.clicked ? 'fas fa-times' : 'fas fa-bars'}></i>
+                    
                 </div>
                 <ul className={this.state.clicked ? 'nav-menu active' : 'nav-menu'}>
                     {MenuItems.map((item, index) => {
@@ -49,10 +49,15 @@ class Navbar extends Component {
                             </li>
                         )
                     })}
+                    <li>
+                        <a className="ham-icon">
+                            <i class="fa fa-bars" aria-hidden="true"></i>
+                        </a>
+                    </li>
                 </ul>
             </nav >
         )
     }
 }
 
-export default Navbar
+export default Navbar;
